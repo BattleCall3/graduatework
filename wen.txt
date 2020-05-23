@@ -1,5 +1,4 @@
-[28] Androulaki E , Barger A , Bortnikov V , et al. Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains[J]. 2018,354(83):4-16. 
-[29] 李晓璐. 基于区块链的电子病历共享及隐私保护研究[D].西安电子科技大学,2019.
+[30] 
 
 
 
