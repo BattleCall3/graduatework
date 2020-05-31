@@ -1,1 +1,19 @@
-If the business model is bad, it’s still bad on the Internet.
+[6] Benet J. IPFS-Content Addressed, Versioned, P2P File System[J]. Eprint Arxiv, 2014.
+
+[16] Azaria A, Ekblaw A, Vieira T, et al. MedRec: Using Blockchain for Medical Data Access and Permission Management[C]// International Conference on Open and Big Data. IEEE, 2016:25-30.
+
+[18] Shrier A A, Chang A, Diakun-Thibault N, et al. Blockchain and health IT: algorithms, privacy, and data[J/OL]. (2018,8,19). [2020-5-30]. http://www.truevaluemetrics.org/DBpdfs/Technology/Blockchain/1-78-blockchainandhealthitalgorithmsprivacydatawhitepaper.pdf.
+
+[22] 张裔智,赵毅,汤小斌.MD5算法研究[J].计算机科学,2008(07):295-297.
+Rivest R.The MD5 Message-Digest Algorithm[S].RFC1321, 1992.
+[23] 林雅榕,侯整风.对哈希算法SHA-1的分析和改进[J].计算机技术与发展,2006(03):124-126.
+Eastlake D, Jones P.US Secure Hash Algorithm1 (SHA1) [S].RFC 3174, 2001.
+
+[25] Szabo N. Formalizing and Securing Relationships on Public Networks[J]. First Monday, 1997, 2(9):0-0;
+
+
+
+6
+11
+18
+28
