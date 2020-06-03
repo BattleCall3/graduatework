@@ -1,19 +1,81 @@
-[6] Benet J. IPFS-Content Addressed, Versioned, P2P File System[J]. Eprint Arxiv, 2014.
+test-network 部署合约命令
 
-[16] Azaria A, Ekblaw A, Vieira T, et al. MedRec: Using Blockchain for Medical Data Access and Permission Management[C]// International Conference on Open and Big Data. IEEE, 2016:25-30.
+peer lifecycle chaincode package fabcar.tar.gz --path ../chaincode/fabcar/go/ --lang golang --label fabcar_1
 
-[18] Shrier A A, Chang A, Diakun-Thibault N, et al. Blockchain and health IT: algorithms, privacy, and data[J/OL]. (2018,8,19). [2020-5-30]. http://www.truevaluemetrics.org/DBpdfs/Technology/Blockchain/1-78-blockchainandhealthitalgorithmsprivacydatawhitepaper.pdf.
+Using organization 1
+++ peer lifecycle chaincode install fabcar.tar.gz
+Using organization 2
+++ peer lifecycle chaincode install fabcar.tar.gz
 
-[22] 张裔智,赵毅,汤小斌.MD5算法研究[J].计算机科学,2008(07):295-297.
-Rivest R.The MD5 Message-Digest Algorithm[S].RFC1321, 1992.
-[23] 林雅榕,侯整风.对哈希算法SHA-1的分析和改进[J].计算机技术与发展,2006(03):124-126.
-Eastlake D, Jones P.US Secure Hash Algorithm1 (SHA1) [S].RFC 3174, 2001.
+Using organization 1
+++ peer lifecycle chaincode queryinstalled
 
-[25] Szabo N. Formalizing and Securing Relationships on Public Networks[J]. First Monday, 1997, 2(9):0-0;
+Using organization 1
+++ peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --version 1 --init-required --package-id fabcar_1:65710fa851d5c73690faa4709ef40b798c085e7210c46d44f8b1e2d5a062c9b0 --sequence 1
+
+Attempting to check the commit readiness of the chaincode definition on peer0.org1 secs
+++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
+
+Using organization 2
+Attempting to check the commit readiness of the chaincode definition on peer0.org2 secs
+++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
+
+Using organization 2
+++ peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --version 1 --init-required --package-id fabcar_1:65710fa851d5c73690faa4709ef40b798c085e7210c46d44f8b1e2d5a062c9b0 --sequence 1
+
+Using organization 1
+Attempting to check the commit readiness of the chaincode definition on peer0.org1 secs
+++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
+
+Using organization 1
+Using organization 2
+++ peer lifecycle chaincode commit -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --version 1 --sequence 1 --init-required
+
+Using organization 1 
+Attempting to Query committed status on peer0.org1, Retry after 3 seconds.
+++ peer lifecycle chaincode querycommitted --channelID mychannel --name fabcar
+
+Using organization 1
+Using organization 2
+++ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n fabcar --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --isInit -c '{"function":"initLedger","Args":[]}'
+
+Using organization 1
+Attempting to Query peer0.org1 ...1591119266 secs
+++ peer chaincode query -C mychannel -n fabcar -c '{"Args":["queryAllCars"]}'
+
+用节点：
+export PATH=${PWD}/../bin:$PATH
+export FABRIC_CFG_PATH=$PWD/../config/
+export CORE_PEER_TLS_ENABLED=true
+export CORE_PEER_LOCALMSPID="Org1MSP"
+export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+export CORE_PEER_ADDRESS=localhost:7051
+
+
+peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n secondgo --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"Args":["testInput","secondKey","secondValue"]}'
+
+peer chaincode query -C mychannel -n secondgo -c '{"Args":["testGet", "firstKey"]}'
+
+medical 调用 invoke
+peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n medical --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"Args":["Init"]}'
+
+上传病历：invoke： -c '{"Args": ["uploadMedicalRecord", "1", "patientName", "doctorName", "createTime", "medicalPicture", "description"]}'
+查询病历：query: -c '{"Args": ["getRecordbyID", "1"]}'
+查询历史病历：query: -c '{"Args": ["getAllHistoryRecordbyID", "1"]}'
 
 
 
-6
-11
-18
-28
+
+
+
+
+
+
+
+
+
+
+
+
+
