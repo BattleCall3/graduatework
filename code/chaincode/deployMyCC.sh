@@ -7,7 +7,7 @@ MAX_RETRY="5"
 CC_SRC_PATH="../chaincode/mychaincode/medical/"
 CC_NAME="medical"
 
-FABRIC_CFG_PATH=$PWD/../config/
+export FABRIC_CFG_PATH=$PWD/../config/
 
 echo Vendoring Go dependencies ...
 pushd ../chaincode/mychaincode/test
