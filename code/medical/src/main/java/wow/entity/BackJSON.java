@@ -10,6 +10,9 @@ public class BackJSON {
 		this.code = code;
 		this.data = data;
 	}
+	public BackJSON(int code) {
+		this.code = code;
+	}
 	public int getCode() {
 		return code;
 	}

@@ -1,0 +1,14 @@
+
+1.管理员获取用户数
+/admin/getUserCount
+{
+    "code": 200,
+    "data": {
+        "count": 1
+    }
+}
+
+
+
+
+

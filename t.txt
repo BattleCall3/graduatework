@@ -1,81 +1,33 @@
-test-network 部署合约命令
+public static void main(String[] args) throws IOException {
+        // Load an existing wallet holding identities used to access the network.
+        Path walletDirectory = Paths.get("wallet");
+        Wallet wallet = Wallets.newFileSystemWallet(walletDirectory);
 
-peer lifecycle chaincode package fabcar.tar.gz --path ../chaincode/fabcar/go/ --lang golang --label fabcar_1
+        // Path to a common connection profile describing the network.
+        Path networkConfigFile = Paths.get("connection.json");
 
-Using organization 1
-++ peer lifecycle chaincode install fabcar.tar.gz
-Using organization 2
-++ peer lifecycle chaincode install fabcar.tar.gz
+        // Configure the gateway connection used to access the network.
+        Gateway.Builder builder = Gateway.createBuilder()
+                .identity(wallet, "user1")
+                .networkConfig(networkConfigFile);
 
-Using organization 1
-++ peer lifecycle chaincode queryinstalled
+        // Create a gateway connection
+        try (Gateway gateway = builder.connect()) {
 
-Using organization 1
-++ peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --version 1 --init-required --package-id fabcar_1:65710fa851d5c73690faa4709ef40b798c085e7210c46d44f8b1e2d5a062c9b0 --sequence 1
+            // Obtain a smart contract deployed on the network.
+            Network network = gateway.getNetwork("mychannel");
+            Contract contract = network.getContract("fabcar");
 
-Attempting to check the commit readiness of the chaincode definition on peer0.org1 secs
-++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
+            // Submit transactions that store state to the ledger.
+            byte[] createCarResult = contract.createTransaction("createCar")
+                    .submit("CAR10", "VW", "Polo", "Grey", "Mary");
+            System.out.println(new String(createCarResult, StandardCharsets.UTF_8));
 
-Using organization 2
-Attempting to check the commit readiness of the chaincode definition on peer0.org2 secs
-++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
+            // Evaluate transactions that query state from the ledger.
+            byte[] queryAllCarsResult = contract.evaluateTransaction("queryAllCars");
+            System.out.println(new String(queryAllCarsResult, StandardCharsets.UTF_8));
 
-Using organization 2
-++ peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --version 1 --init-required --package-id fabcar_1:65710fa851d5c73690faa4709ef40b798c085e7210c46d44f8b1e2d5a062c9b0 --sequence 1
-
-Using organization 1
-Attempting to check the commit readiness of the chaincode definition on peer0.org1 secs
-++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
-
-Using organization 1
-Using organization 2
-++ peer lifecycle chaincode commit -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --version 1 --sequence 1 --init-required
-
-Using organization 1 
-Attempting to Query committed status on peer0.org1, Retry after 3 seconds.
-++ peer lifecycle chaincode querycommitted --channelID mychannel --name fabcar
-
-Using organization 1
-Using organization 2
-++ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n fabcar --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --isInit -c '{"function":"initLedger","Args":[]}'
-
-Using organization 1
-Attempting to Query peer0.org1 ...1591119266 secs
-++ peer chaincode query -C mychannel -n fabcar -c '{"Args":["queryAllCars"]}'
-
-用节点：
-export PATH=${PWD}/../bin:$PATH
-export FABRIC_CFG_PATH=$PWD/../config/
-export CORE_PEER_TLS_ENABLED=true
-export CORE_PEER_LOCALMSPID="Org1MSP"
-export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
-export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
-export CORE_PEER_ADDRESS=localhost:7051
-
-
-peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n secondgo --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"Args":["testInput","secondKey","secondValue"]}'
-
-peer chaincode query -C mychannel -n secondgo -c '{"Args":["testGet", "firstKey"]}'
-
-medical 调用 invoke
-peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n medical --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"Args":["Init"]}'
-
-上传病历：invoke： -c '{"Args": ["uploadMedicalRecord", "1", "patientName", "doctorName", "createTime", "medicalPicture", "description"]}'
-查询病历：query: -c '{"Args": ["getRecordbyID", "1"]}'
-查询历史病历：query: -c '{"Args": ["getAllHistoryRecordbyID", "1"]}'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        } catch (ContractException | TimeoutException | InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
