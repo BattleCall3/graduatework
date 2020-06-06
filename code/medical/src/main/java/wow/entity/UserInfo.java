@@ -2,12 +2,29 @@ package wow.entity;
 
 public class UserInfo {
 	
+	
+	private Integer userID;
 	private Integer userType;
 	private String userName;
 	private String userPhone;
 	private String password;
 	private Integer hospitalID;
-	
+	public UserInfo(Integer userID, Integer userType, String userName, String userPhone, String password,
+			Integer hospitalID) {
+		super();
+		this.userID = userID;
+		this.userType = userType;
+		this.userName = userName;
+		this.userPhone = userPhone;
+		this.password = password;
+		this.hospitalID = hospitalID;
+	}
+	public Integer getUserID() {
+		return userID;
+	}
+	public void setUserID(Integer userID) {
+		this.userID = userID;
+	}
 	public Integer getUserType() {
 		return userType;
 	}

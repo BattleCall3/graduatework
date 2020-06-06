@@ -68,12 +68,12 @@ public class AdminController {
 			queryStr = new String(queryResult, StandardCharsets.UTF_8);
 			JSONObject jsonResult = JSONObject.parseObject(queryStr);
 			MedicalRecord medicalRecord = new MedicalRecord();
-			medicalRecord.setPatinetID(01);
+			medicalRecord.setPatientID(01);
 			medicalRecord.setPatientName(jsonResult.getString("patientname"));
 			medicalRecord.setDoctorName(jsonResult.getString("doctorname"));
 			medicalRecord.setCreateTime(jsonResult.getString("createtime"));
 			medicalRecord.setMedicalPicture(jsonResult.getString("medicalpicture"));
-			medicalRecord.setDesciption(jsonResult.getString("description"));
+			medicalRecord.setDescription(jsonResult.getString("description"));
 			result.setData(medicalRecord);
 		} catch (Exception e) {
 			e.printStackTrace();

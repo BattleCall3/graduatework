@@ -39,9 +39,11 @@ import org.hyperledger.fabric.gateway.impl.GatewayImpl;
 public class Value {
 	
 	
+	private final static String projectPath = "D:/File/graduate/graduatework/code/";
+	
 	/* fabric相关证书 
 	 * 相对路径找不到，先使用绝对路径  */
-	private static final Path localPath = Paths.get("D:/File/graduate/graduatework/code/medical/src/main/resources/");
+	private static final Path localPath = Paths.get(projectPath+"/medical/src/main/resources/");
 	private static final Path NETWORK_CONFIG_PATH = localPath.resolve(Paths.get("connection.json"));
 	private static final Path credentialOrg1Path = localPath.resolve(Paths.get("crypto-config", "peerOrganizations", "org1.example.com", "users", "User1@org1.example.com", "msp"));
 	private static final Path credentialOrg1PemPath = credentialOrg1Path.resolve(Paths.get("signcerts", "User1@org1.example.com-cert.pem"));
@@ -49,7 +51,11 @@ public class Value {
 	private static final String channelName = "mychannel";
 	private static final String chaincode = "medical";
 	
+	// RSA 密钥长度
 	private final static int KEY_SIZE = 1024;
+	
+	// 医疗图片地址
+	private final static String medicalPicturePath = projectPath+"/picture/medical/";
 	
 	
 	//获取合约连接
@@ -209,5 +215,9 @@ public class Value {
         return verifyResult;
     }
 
+	public static String getMedicalPicturePath() {
+		return medicalPicturePath;
+	}
+	
 
 }
