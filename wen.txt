@@ -1,83 +1,22 @@
-test-network 部署合约命令
-
-peer lifecycle chaincode package fabcar.tar.gz --path ../chaincode/fabcar/go/ --lang golang --label fabcar_1
-
-Using organization 1
-++ peer lifecycle chaincode install fabcar.tar.gz
-Using organization 2
-++ peer lifecycle chaincode install fabcar.tar.gz
-
-Using organization 1
-++ peer lifecycle chaincode queryinstalled
-
-Using organization 1
-++ peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --version 1 --init-required --package-id fabcar_1:65710fa851d5c73690faa4709ef40b798c085e7210c46d44f8b1e2d5a062c9b0 --sequence 1
-
-Attempting to check the commit readiness of the chaincode definition on peer0.org1 secs
-++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
-
-Using organization 2
-Attempting to check the commit readiness of the chaincode definition on peer0.org2 secs
-++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
-
-Using organization 2
-++ peer lifecycle chaincode approveformyorg -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --version 1 --init-required --package-id fabcar_1:65710fa851d5c73690faa4709ef40b798c085e7210c46d44f8b1e2d5a062c9b0 --sequence 1
-
-Using organization 1
-Attempting to check the commit readiness of the chaincode definition on peer0.org1 secs
-++ peer lifecycle chaincode checkcommitreadiness --channelID mychannel --name fabcar --version 1 --sequence 1 --output json --init-required
-
-Using organization 1
-Using organization 2
-++ peer lifecycle chaincode commit -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem --channelID mychannel --name fabcar --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --version 1 --sequence 1 --init-required
-
-Using organization 1 
-Attempting to Query committed status on peer0.org1, Retry after 3 seconds.
-++ peer lifecycle chaincode querycommitted --channelID mychannel --name fabcar
-
-Using organization 1
-Using organization 2
-++ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n fabcar --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt --isInit -c '{"function":"initLedger","Args":[]}'
-
-Using organization 1
-Attempting to Query peer0.org1 ...1591119266 secs
-++ peer chaincode query -C mychannel -n fabcar -c '{"Args":["queryAllCars"]}'
-
-用节点：
-export PATH=${PWD}/../bin:$PATH
-export FABRIC_CFG_PATH=$PWD/../config/
-export CORE_PEER_TLS_ENABLED=true
-export CORE_PEER_LOCALMSPID="Org1MSP"
-export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
-export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
-export CORE_PEER_ADDRESS=localhost:7051
+[1] Nakamoto S. Bitcoin: A Peer-to-Peer Electronic Cash System[EB/OL]. (2009,02,08). [2020,5,30].https://bitcoin.org/bitcoin.pdf.
+[2] Melanie Swan. Blockchain: Blueprint for a New Economy[M]// Blockchain : blueprint for a new economy. O'Reilly, 2015.
+[3] 侯周国,梁欢.区块链技术发展现状及特色应用研究[J].科技创新与应用,2019(30):18-20+23.
+[4] 胥婷,崔文彬,于广军.我国智慧医院建设现状及发展路径[J].中国医院,2020,24(03):1-3+10.
+[5] 中国区块链技术和产业发展论坛.中国区块链技术和应用发展白皮书[M].城市不详:出版社不详,2016.
+[6] Azaria A, Ekblaw A, Vieira T, et al. MedRec: Using Blockchain for Medical Data Access and Permission Management[C]. Vienna,AUSTRIA: International Conference on Open and Big Data.2016:25-30.
+[7] Xhafa F, Li Jingwei, Zhao Gansen, et al．Designing cloud-based electronic health record system with attribute-based encryption [J]. Multimedia Tools and Applications, 2015,74(10):3441．
+[8] Shrier A A. Blockchain and health IT: algorithms, privacy, and data[EB/OL]. (2016,08,08).[2020,05,30]. http://www.truevaluemetrics.org/DBpdfs/Technology/Blockchain/1-78-blockchainandhealthitalgorithmsprivacydatawhitepaper.pdf.
+[9] 薛腾飞,傅群超,王枞等.基于区块链的医疗数据共享模型研究[J].自动化学报,2017,43(09):1555-1562.
+[10] 张超,李强,陈子豪等.Medical Chain:联盟式医疗区块链系统[J].自动化学报,2019,45(08):1495-1510.
+[11] 梅颖.安全存储医疗记录的区块链方法研究[J].江西师范大学学报(自然科学版),2017,41(05):484-490.
 
 
-peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile ${PWD}/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n secondgo --peerAddresses localhost:7051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles ${PWD}/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"Args":["testInput","secondKey","secondValue"]}'
-
-peer chaincode query -C mychannel -n secondgo -c '{"Args":["testGet", "firstKey"]}'
-
-medical 调用 invoke
-peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.example.com --tls true --cafile /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem -C mychannel -n medical --peerAddresses localhost:7051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt --peerAddresses localhost:9051 --tlsRootCertFiles /usr/file/gopath/test/hyperledger/fabric/scripts/fabric-samples/test-network/organizations/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt -c '{"Args":["Init"]}'
-
-peer chaincode query -C mychannel -n medical -c '{"Args":["testGet", "firstKey"]}'
-
-上传病历：invoke： -c '{"Args": ["uploadMedicalRecord", "patientID1", "patientName1", "doctorName1", "createTime1", "medicalPicture1", "description1"]}'
-查询病历：query: -c '{"Args": ["getRecordbyID", "patientID1"]}'
-查询历史病历：query: -c '{"Args": ["getAllHistoryRecordbyID", "patientID1"]}'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[22] Rivest R.The MD5 Message-Digest Algorithm[S].RFC 1321, 1992. 
+[23] Eastlake D, Jones P.US Secure Hash Algorithm1 (SHA1)[S].RFC 3174, 2001.
+[24] Lauter K . The advantages of elliptic curve cryptography for wireless security[J]. IEEE Wireless Communications, 2004,11(1):62-67. 
+[25] 欧阳丽炜,王帅,袁勇等.智能合约:架构及进展[J].自动化学报,2019,45(03):445-457.
+[26] Buterin V.A next-generation smart contract and decentralized application platform[EB/OL].(2019,6,17).[2020,5,30].https://github.com/ethereum/wiki/wiki/White-Paper.
+[27] 李燕,马海英,王占君.区块链关键技术的研究进展[J].计算机工程与应用,2019,55(20):13-23+100.
+[28] Androulaki E. Hyperledger Fabric: A Distributed Operating System for Permissioned Blockchains[EB/OL]. (2018,1,30).[2020,05,30].https://arxiv.org/pdf/1801.10228.pdf.
+[29] 李晓璐. 基于区块链的电子病历共享及隐私保护研究[D].西安:西安电子科技大学,2019.
 

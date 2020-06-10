@@ -1,33 +1,9 @@
-public static void main(String[] args) throws IOException {
-        // Load an existing wallet holding identities used to access the network.
-        Path walletDirectory = Paths.get("wallet");
-        Wallet wallet = Wallets.newFileSystemWallet(walletDirectory);
+                   
+区块链技术是很新的概念，在各个行业中的应用场景都处于尝试阶段。医疗区块链是区块链技术应用在医疗领域的一种创新性尝试，该生对于所选课题方向进行了较为详尽的调研，参考了许多文献和书籍，证明了其可行性，而且具有一定实际价值。选择区块链技术，符合学生专业发展方向，能丰富学生的基础知识和技能，对于提高其综合工程能力有益。研究方法和进度安排基本合理，难度合适，学生能够在预定时间内完成该课题的设计。                                             
+同意该课题开题。 
 
-        // Path to a common connection profile describing the network.
-        Path networkConfigFile = Paths.get("connection.json");
+区块链是一个全新的概念，该生前期阅读了大量的文献和技术博客，对区块链的基础知识，技术特性，共识算法及智能合约等概念都有了一定程度的了解。之后结合区块链技术特点，研究对比可能的应用场景：物流溯源、供应链等，选择目前研究涉及较少的医疗领域，具有创新意识与挑战意识。其中期报告写作规范，思路清晰，图表准确，表现出较为扎实的理论基础和较强的科研工作能力。                    
+目前进度基本上与原计划相符，可以继续按照原计划执行，完成系统实现部分。
 
-        // Configure the gateway connection used to access the network.
-        Gateway.Builder builder = Gateway.createBuilder()
-                .identity(wallet, "user1")
-                .networkConfig(networkConfigFile);
 
-        // Create a gateway connection
-        try (Gateway gateway = builder.connect()) {
 
-            // Obtain a smart contract deployed on the network.
-            Network network = gateway.getNetwork("mychannel");
-            Contract contract = network.getContract("fabcar");
-
-            // Submit transactions that store state to the ledger.
-            byte[] createCarResult = contract.createTransaction("createCar")
-                    .submit("CAR10", "VW", "Polo", "Grey", "Mary");
-            System.out.println(new String(createCarResult, StandardCharsets.UTF_8));
-
-            // Evaluate transactions that query state from the ledger.
-            byte[] queryAllCarsResult = contract.evaluateTransaction("queryAllCars");
-            System.out.println(new String(queryAllCarsResult, StandardCharsets.UTF_8));
-
-        } catch (ContractException | TimeoutException | InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
