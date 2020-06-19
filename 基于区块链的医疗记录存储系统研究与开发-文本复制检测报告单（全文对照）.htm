@@ -1,0 +1,3998 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0072)http://webvpn.dlut.check.cnki.net/user/Report.aspx -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD id=Head1><TITLE>基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<SCRIPT type=text/javascript 
+src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/Common.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/jQuery.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/MathJax.js"></SCRIPT>
+
+<SCRIPT type=text/x-mathjax-config>
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true
+            },
+            displayAlign: "left",
+            TeX: {
+                equationNumbers: {
+                    useLabelIds: true
+                }
+            },
+            "HTML-CSS": {
+                linebreaks: {
+                    automatic: true
+                },
+                scale: 100,
+                styles: {
+                    ".MathJax_Display": {
+                        "text-align": "left"
+                    },
+                    ".MathJax": {
+                    }
+                }
+            },
+            SVG: {
+                linebreaks: {
+                    automatic: true
+                }
+            }
+        });
+    </SCRIPT>
+<LINK rel=stylesheet type=text/css 
+href="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/writeInfo.css">
+<STYLE type=text/css>A {
+	COLOR: #035d03
+}
+A {
+	COLOR: #035d03
+}
+A:visited {
+	COLOR: #035d03
+}
+A:hover {
+	COLOR: #800613
+}
+.n_main {
+	BACKGROUND-COLOR: #fff; MARGIN: 0px auto; MIN-HEIGHT: 600px; WIDTH: 640px; BACKGROUND-REPEAT: repeat-y; HEIGHT: auto !important
+}
+* {
+	TEXT-ALIGN: left
+}
+HTML {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND: url(images/n_bg.gif); COLOR: #292929; FONT-SIZE: 12px
+}
+BODY {
+	TEXT-ALIGN: left; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND: url(images/n_bg.gif); COLOR: #292929; FONT-SIZE: 12px
+}
+
+@media Print    
+{
+.n_print {
+	DISPLAY: none
+}
+    }
+.n_table_prints {
+	COLOR: #2e2f2e; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.n_table_prints:hover {
+	COLOR: #760605
+}
+.n_title {
+	MARGIN: 12px auto; WIDTH: 640px
+}
+.n_logo_left {
+	TEXT-ALIGN: left; PADDING-LEFT: 20px
+}
+.n_logo_left IMG {
+	BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none
+}
+.n_logo_right IMG {
+	BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none
+}
+.n_bfb {
+	FONT-WEIGHT: bold
+}
+.n_logo_right {
+	TEXT-ALIGN: right; PADDING-RIGHT: 20px
+}
+.n_title_left {
+	WIDTH: 190px; DISPLAY: inline; BACKGROUND: url(images/jie_amlc.gif) no-repeat; FLOAT: left; HEIGHT: 46px; MARGIN-LEFT: 10px
+}
+.n_title_right {
+	WIDTH: 185px; DISPLAY: inline; BACKGROUND: url(images/jie_zw.gif) no-repeat; FLOAT: right; HEIGHT: 62px; MARGIN-RIGHT: 10px
+}
+.n_bodytop {
+	MARGIN: 0px auto; WIDTH: 640px
+}
+.n_clear {
+	CLEAR: both
+}
+.n_bt {
+	BORDER-BOTTOM: #035d03 1px solid; TEXT-ALIGN: center; LINE-HEIGHT: 30px; MARGIN-BOTTOM: 1px; HEIGHT: 30px; FONT-SIZE: 24px; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.n_jie {
+	FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.n_no {
+	TEXT-ALIGN: left; LINE-HEIGHT: 30px; MARGIN: 0px auto; WIDTH: 640px; BACKGROUND: #f4f9ef; HEIGHT: 30px; COLOR: #750606; FONT-SIZE: 12px
+}
+.n_bgd_k1 {
+	WIDTH: 640px; HEIGHT: auto; FONT-SIZE: 12px; PADDING-TOP: 10px
+}
+.n_yes {
+	COLOR: #dcaf29
+}
+.n_table_a {
+	BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000; FONT-SIZE: 12px; BORDER-LEFT-WIDTH: 0px
+}
+.n_table_a_cos {
+	BACKGROUND-COLOR: #f4f9ef; HEIGHT: 26px
+}
+.n_table_a_cosa {
+	BACKGROUND-COLOR: #f4f9ef; HEIGHT: 20px
+}
+.n_text_green {
+	TEXT-ALIGN: right; LINE-HEIGHT: 26px; COLOR: #1a5f02; FONT-WEIGHT: bold
+}
+.n_text_block_b {
+	LINE-HEIGHT: 20px; PADDING-LEFT: 8px; COLOR: #7a7a7a
+}
+.n_text_block_bm {
+	TEXT-ALIGN: left; LINE-HEIGHT: 20px; FONT-SIZE: 12px
+}
+.n_text_block_a {
+	TEXT-ALIGN: left; LINE-HEIGHT: 26px
+}
+.n_bgd_k2 {
+	FONT-SIZE: 12px
+}
+.n_table_b {
+	WIDTH: 640px; BORDER-TOP: #035d03 2px solid
+}
+.n_text_Gm {
+	COLOR: #035d03
+}
+.n_text_Gm A {
+	COLOR: #035d03
+}
+.n_text_Gm A:hover {
+	COLOR: #7bab7c
+}
+.s_new_hui {
+	COLOR: #666
+}
+.n_text_red_a {
+	TEXT-ALIGN: left; LINE-HEIGHT: 26px; PADDING-LEFT: 10px; COLOR: #860505; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.n_text_red_a_zb {
+	TEXT-ALIGN: right; LINE-HEIGHT: 26px; COLOR: #860505; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.n_text_Gs {
+	COLOR: #860505; BORDER-TOP: #035d03 1px dotted
+}
+.n_table_b_cos {
+	BACKGROUND: #f3f9ef
+}
+.n_red_bold {
+	COLOR: #000; FONT-WEIGHT: bold
+}
+.n_text_block_b6 {
+	TEXT-ALIGN: left; COLOR: #7e7c7c; FONT-WEIGHT: bold
+}
+.n_table_b1 {
+	BACKGROUND: #f3f9ef
+}
+.n_table_a1 {
+	BORDER-BOTTOM: #035d03 1px dotted; LINE-HEIGHT: 20px; BACKGROUND: #f3f9ef
+}
+.n_table_a2 {
+	LINE-HEIGHT: 20px; BACKGROUND: #f3f9ef
+}
+.n_table_a3 {
+	BORDER-BOTTOM: #035d03 1px solid; LINE-HEIGHT: 25px; BACKGROUND: #f3f9ef; BORDER-TOP: #035d03 1px solid
+}
+.n_table_a3_l {
+	TEXT-ALIGN: right
+}
+.n_table_a3_r {
+	TEXT-ALIGN: left; FONT-WEIGHT: bold
+}
+.n_table_a3_ra {
+	COLOR: #292929
+}
+.n_table_a3_ra:hover {
+	COLOR: #750606
+}
+.n_text_block_bs {
+	TEXT-ALIGN: left; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.n_text_block_bss {
+	TEXT-ALIGN: left; COLOR: #666
+}
+.n_text_block_bsm {
+	FONT-WEIGHT: bold
+}
+.n_text_GT {
+	BORDER-BOTTOM: #035d03 1px dotted; PADDING-LEFT: 6px; COLOR: #860505; FONT-WEIGHT: bold
+}
+.n_text_GTs {
+	PADDING-LEFT: 10px; FONT-WEIGHT: bold
+}
+.n_qubr_fzb {
+	BORDER-BOTTOM: #1a5f02 1px solid
+}
+.n_table_a_cosa {
+	BORDER-BOTTOM: #1a5f02 1px solid
+}
+.n_biao {
+	TEXT-ALIGN: right
+}
+.n_bgd_biao {
+	WIDTH: 640px
+}
+.n_text_block_a2 A {
+	COLOR: #292929
+}
+.n_text_block_a2 A:hover {
+	COLOR: #860505
+}
+.n_jcjg_a {
+	BACKGROUND-IMAGE: url(images/pmlc12_icon1.gif); TEXT-ALIGN: left; LINE-HEIGHT: 17px; PADDING-LEFT: 10px; WIDTH: 48px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 17px; COLOR: #333
+}
+.n_jcjg_ap {
+	BACKGROUND-IMAGE: url(images/n_re.gif); TEXT-ALIGN: left; LINE-HEIGHT: 17px; PADDING-LEFT: 10px; WIDTH: 48px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 17px; COLOR: #333
+}
+.n_jcjg_am {
+	TEXT-ALIGN: left; LINE-HEIGHT: 17px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 17px; COLOR: #333
+}
+.n_jcjg_al {
+	BACKGROUND-IMAGE: url(images/n_jh.gif); TEXT-ALIGN: left; LINE-HEIGHT: 17px; PADDING-LEFT: 10px; WIDTH: 48px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 17px; COLOR: #333
+}
+.n_k3 {
+	BACKGROUND: #f7f7f7; OVERFLOW: hidden
+}
+.n_pic {
+	MARGIN: 5px auto 10px; WIDTH: 602px; HEIGHT: 15px
+}
+.n_table_zs {
+	MARGIN: 0px auto
+}
+.n_bodymid {
+	MARGIN: 0px auto; WIDTH: 640px; FONT-SIZE: 12px; OVERFLOW: hidden
+}
+.n_bodymid_bf {
+	MARGIN-TOP: 5px
+}
+.n_table_jiebf {
+	BACKGROUND: #f3f9ef; BORDER-TOP: #035d03 2px solid
+}
+.n_table_jiebfs {
+	BORDER-BOTTOM: #035d03 1px solid; BACKGROUND: #f3f9ef; BORDER-TOP: #035d03 1px solid
+}
+.n_table_jiebf_zzs {
+	PADDING-LEFT: 40px
+}
+.n_table_jiebf_fzb {
+	TEXT-ALIGN: right; LINE-HEIGHT: 25px; HEIGHT: 25px; COLOR: #760605; FONT-WEIGHT: bold
+}
+.n_jcjg_as {
+	BACKGROUND-IMAGE: url(images/pmlc12_icon1.gif); TEXT-ALIGN: center; LINE-HEIGHT: 17px; WIDTH: 48px; BACKGROUND-REPEAT: no-repeat; FLOAT: left; HEIGHT: 17px; COLOR: #333
+}
+.n_xu {
+	BORDER-BOTTOM: #cccccc 1px solid; WIDTH: 640px
+}
+.n_xu_a {
+	BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center; BACKGROUND-COLOR: #fcfaf1; WIDTH: 20px; HEIGHT: 20px; BORDER-RIGHT: #ccc 1px solid
+}
+.n_text_back_a {
+	TEXT-ALIGN: center; LINE-HEIGHT: 20px; PADDING-LEFT: 2px; COLOR: #333; FONT-SIZE: 12px
+}
+.n_text_G2 {
+	TEXT-ALIGN: left; LINE-HEIGHT: 20px; PADDING-LEFT: 8px; COLOR: #333; FONT-SIZE: 12px
+}
+.n_text_G2 A {
+	COLOR: #2e2f2e
+}
+.n_text_G2 A:hover {
+	COLOR: #800613
+}
+.n_xu_a {
+	BORDER-BOTTOM: #cccccc 1px solid; TEXT-ALIGN: center; BACKGROUND-COLOR: #fcfaf1; WIDTH: 20px; HEIGHT: 20px; BORDER-RIGHT: #cccccc 1px solid
+}
+.n_text_red_d {
+	TEXT-ALIGN: center; COLOR: #8b0411; FONT-SIZE: 12px
+}
+.n_xu_d {
+	BORDER-BOTTOM: #ccc 1px dotted; TEXT-ALIGN: center; BORDER-LEFT: #cccccc 1px solid; WIDTH: 100px; HEIGHT: 20px
+}
+.n_xu_da {
+	TEXT-ALIGN: center; BORDER-LEFT: #cccccc 1px solid; WIDTH: 100px; HEIGHT: 20px; COLOR: #7a7a7a
+}
+.n_bodylast {
+	BACKGROUND-COLOR: #f3f9ef; MARGIN: 5px auto; WIDTH: 640px; HEIGHT: 30px
+}
+.n_bodyfooter {
+	LINE-HEIGHT: 20px; MARGIN: 5px auto; WIDTH: 640px; HEIGHT: auto; COLOR: #666; FONT-SIZE: 12px; BORDER-TOP: #1b5e01 2px solid
+}
+.n_footer_sm {
+	FLOAT: left; FONT-WEIGHT: bold
+}
+.n_footer_sms {
+	FLOAT: left
+}
+.n_footer_smr {
+	FLOAT: right
+}
+.n_footer_smr:hover {
+	COLOR: #800811
+}
+.n_bodymid_ywnr {
+	MARGIN-TOP: 5px; HEIGHT: auto; BORDER-TOP: #1b5e01 1px solid
+}
+.n_table_ywtop {
+	BACKGROUND: #ddf0ce
+}
+.n_ywnr {
+	LINE-HEIGHT: 26px; PADDING-LEFT: 22px; HEIGHT: 26px; FONT-WEIGHT: bold
+}
+.n_new_red {
+	COLOR: red
+}
+.n_new_ye {
+	COLOR: #e28a05
+}
+.n_red {
+	
+}
+.red_font {
+	COLOR: #d90808
+}
+.n_ymnr_bz {
+	HEIGHT: auto; BORDER-TOP: #1b5e01 1px solid
+}
+.n_ymnr_top {
+	LINE-HEIGHT: 26px; TEXT-INDENT: 15px; BACKGROUND: #ddf0ce; HEIGHT: 26px; FONT-WEIGHT: bold
+}
+.n_ymnr_top_s {
+	MARGIN: 5px auto; WIDTH: 620px; BACKGROUND: #f7f7f7
+}
+.n_table_bz_gd {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 150%; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #f7f7f7; COLOR: #8b0411; PADDING-TOP: 5px
+}
+.n_table_bz_mark {
+	LINE-HEIGHT: 25px; TEXT-INDENT: 18px; BACKGROUND: #f7f7f7; FONT-WEIGHT: bold
+}
+.n_jz {
+	HEIGHT: auto; BORDER-TOP: #1b5e01 1px solid
+}
+.n_jz_nr {
+	PADDING-LEFT: 10px; BACKGROUND: #ddf0ce; FONT-WEIGHT: bold
+}
+.n_jz_nrs {
+	LINE-HEIGHT: 180%; PADDING-LEFT: 10px
+}
+.n_xzgf_bg {
+	MARGIN: 5px auto 5px 0px
+}
+.n_xzgf_bgs {
+	MARGIN: 5px auto
+}
+.content01 {
+	LINE-HEIGHT: 20px; BACKGROUND: #ffffff; FONT-WEIGHT: bold
+}
+.content02 {
+	TEXT-ALIGN: center; LINE-HEIGHT: 20px; BACKGROUND: #ffffff
+}
+.content05 {
+	TEXT-ALIGN: left; LINE-HEIGHT: 20px; BACKGROUND: #ffffff
+}
+.content03 {
+	LINE-HEIGHT: 20px; BACKGROUND: #ffffff
+}
+.n_ywnr_pic {
+	MARGIN: auto; WIDTH: 482px
+}
+.n_table_bz_gds {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 10px; PADDING-TOP: 5px
+}
+.n_ye {
+	COLOR: #aeb81b
+}
+.n_sm {
+	COLOR: #000; FONT-WEIGHT: bold
+}
+.n_sm_tables {
+	LINE-HEIGHT: 30px; BACKGROUND: #f7f7f7
+}
+.n_dz {
+	COLOR: #2e2f2e
+}
+.n_dz:hover {
+	COLOR: #79100d; FONT-SIZE: 12px
+}
+.n_bgd_biao_b {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center; LINE-HEIGHT: 26px; BACKGROUND: #ddf0ce; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.n_bgd_biao_bs {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center; LINE-HEIGHT: 26px; BACKGROUND: #ddf0ce; OVERFLOW: hidden; FONT-WEIGHT: bold
+}
+.n_bgd_biao_bs {
+	BORDER-LEFT: #999 1px solid
+}
+.n_qwdz_ywnr {
+	MARGIN-TOP: 5px; BORDER-TOP: #999 1px solid
+}
+.n_text_red_ax {
+	TEXT-ALIGN: center; LINE-HEIGHT: 26px; COLOR: #860505; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.n_table_xu_a {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center; WIDTH: 20px; BACKGROUND: #fdfaf3; FONT-WEIGHT: bold
+}
+.n_qwdz_k {
+	BORDER-BOTTOM: #999 1px solid; BACKGROUND: #f3f9ef
+}
+.n_bgd_biao_KU {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; OVERFLOW: hidden
+}
+.n_bgd_biao_c {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 150%; MARGIN: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #fef4f5; PADDING-TOP: 5px
+}
+.n_text_Gr {
+	BORDER-BOTTOM: #1d5e02 1px dotted
+}
+.n_bgd_biao_KUa {
+	LINE-HEIGHT: 18px; MARGIN: 0px 6px 6px
+}
+.n_bgd_biao_KUas {
+	TEXT-ALIGN: center; LINE-HEIGHT: 180%
+}
+.n_bgd_biao_KUas A {
+	COLOR: #2e2f2e
+}
+.n_bgd_biao_KUas A:hover {
+	COLOR: #7b100a
+}
+.n_bgd_biao_KUm {
+	TEXT-ALIGN: center; LINE-HEIGHT: 26px; BACKGROUND: #ddf0ce; FONT-WEIGHT: bold
+}
+.n_bgd_biao_KUr {
+	BORDER-BOTTOM: #999 1px solid; BORDER-LEFT: #999 1px solid; MIN-HEIGHT: 30px; HEIGHT: auto
+}
+.n_bgd_biao_KUu {
+	BORDER-BOTTOM: #999 1px solid
+}
+.n_qwdz_bz {
+	LINE-HEIGHT: 180%; COLOR: #d90808
+}
+.n_qwdz_bz A {
+	COLOR: #2e2f2e
+}
+.n_qwdz_bz A:hover {
+	COLOR: #7b100a
+}
+.n_qwdz_xxdz {
+	FONT-SIZE: 12px
+}
+.n_jcxxjg {
+	LINE-HEIGHT: 25px; FONT-WEIGHT: bold
+}
+.n_bgxxjc {
+	LINE-HEIGHT: 30px; BACKGROUND: #f3f9ef; BORDER-TOP: #1d5e02 2px solid
+}
+.n_bz {
+	FONT-WEIGHT: bold
+}
+.n_bgxxjcs {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.n_bgxxjcm {
+	LINE-HEIGHT: 18px; BACKGROUND: #fef4f5
+}
+.n_pic_dz {
+	TEXT-ALIGN: right
+}
+.n_bf_bt {
+	TEXT-ALIGN: center; FONT-WEIGHT: bold
+}
+.n_table_bz_gdh {
+	BORDER-BOTTOM: #1b5e01 1px dotted; LINE-HEIGHT: 20px; TEXT-INDENT: 18px; HEIGHT: 20px; COLOR: #2d2d2c; FONT-WEIGHT: bold
+}
+.n_table_pqbt {
+	TEXT-ALIGN: center; FONT-WEIGHT: bold
+}
+.n_new_czb {
+	TEXT-ALIGN: center
+}
+.n_new_czb_red {
+	TEXT-ALIGN: center; COLOR: #ff0000
+}
+.n_new_bgl {
+	TEXT-ALIGN: right; LINE-HEIGHT: 22px; FONT-WEIGHT: bold
+}
+.n_text_block_b6 A {
+	COLOR: #666
+}
+.n_text_block_b6 A:hover {
+	COLOR: #860505
+}
+.n_new_pqgdims {
+	LINE-HEIGHT: 25px; PADDING-LEFT: 10px; BACKGROUND: #f3f9ef; BORDER-TOP: #1a5f02 2px solid; FONT-WEIGHT: bold
+}
+.n_new_pqgdimx {
+	MARGIN: 5px auto; WIDTH: 620px; BACKGROUND: #f7f7f7
+}
+.n_new_pqgdimxNew {
+	MARGIN: 5px auto; PADDING-LEFT: 20px; WIDTH: 620px
+}
+.n_new_bg_lb TABLE {
+	TEXT-ALIGN: left
+}
+.n_new_bgx {
+	BORDER-BOTTOM: #1d5e02 1px dotted
+}
+.n_new_bgx IMG {
+	FLOAT: left
+}
+.n_new_pqgd_lie {
+	TEXT-ALIGN: right
+}
+.n_sms A {
+	COLOR: #666
+}
+.n_sms A:hover {
+	COLOR: #90050b
+}
+.n_qwdz_ywnr {
+	MARGIN-TOP: 5px; BORDER-TOP: #999 1px solid
+}
+.qw_bgd_biao {
+	WIDTH: 640px; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed
+}
+.qw_bgd_biao_b {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center; LINE-HEIGHT: 25px; BACKGROUND-COLOR: #ddf0ce; HEIGHT: 25px; COLOR: #000; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px solid
+}
+.qw_bgd_biao_bs {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #999 1px solid; LINE-HEIGHT: 25px; BACKGROUND-COLOR: #ddf0ce; HEIGHT: 25px; COLOR: #000; BORDER-TOP: #999 1px solid
+}
+.qw_bgd_biao_KU {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: left; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; VERTICAL-ALIGN: top; BORDER-RIGHT: #999 1px solid
+}
+.qw_bgd_biao_KUa {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; WIDTH: 280px; PADDING-RIGHT: 5px; VERTICAL-ALIGN: top; PADDING-TOP: 5px
+}
+.qw_text_red_b {
+	TEXT-ALIGN: left; LINE-HEIGHT: 20px; COLOR: #d90808; FONT-SIZE: 12px
+}
+.qw_bgd_biao_c {
+	TEXT-ALIGN: left; LINE-HEIGHT: 18px; BACKGROUND-COLOR: #fdf4f2; MARGIN-TOP: 5px; COLOR: #000
+}
+.qw_table_xu_a {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #999 1px solid; BACKGROUND-COLOR: #fcfaf1; BORDER-TOP: #999 1px solid; BORDER-RIGHT: #999 1px dashed
+}
+.OutStyle {
+	COLOR: red; CURSOR: pointer
+}
+.OutStyle_table {
+	COLOR: #da8913; CURSOR: pointer
+}
+.qw_table_xu_b {
+	BORDER-BOTTOM: #999 1px solid; TEXT-ALIGN: center; BORDER-LEFT: #999 1px solid; BACKGROUND-COLOR: #ddf0ce; WIDTH: 18px; BORDER-TOP: #999 1px solid
+}
+.qw_text_red_ax {
+	TEXT-ALIGN: center; LINE-HEIGHT: 26px; PADDING-LEFT: 10px; COLOR: #860505; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.table_check_rsR TABLE {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-COLLAPSE: collapse; WORD-WRAP: break-word; WORD-BREAK: break-all; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+.table_check_rsR TABLE TD {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 0px
+}
+TH {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 0px
+}
+.t_text_red_a {
+	COLOR: #920e0a
+}
+.Font_Color_Red {
+	TEXT-DECORATION: underline
+}
+.Font_Color_Green {
+	FONT-STYLE: oblique; COLOR: #009900; TEXT-DECORATION: underline
+}
+.Font_Color_Red {
+	COLOR: red
+}
+.Font_Color_Grey {
+	COLOR: #666666
+}
+.item_title {
+	LINE-HEIGHT: 24px; BACKGROUND-COLOR: #f4f9ef; PADDING-LEFT: 10px; FONT-SIZE: 14px; BORDER-TOP: #035d03 2px solid; FONT-WEIGHT: bold
+}
+.n_text_green_normal {
+	LINE-HEIGHT: 26px; COLOR: #1a5f02
+}
+A.maxlink {
+	COLOR: #860505
+}
+A.maxlink:visited {
+	COLOR: #860505
+}
+.per_g {
+	BACKGROUND-IMAGE: url(images/pmlc_icon1.gif); LINE-HEIGHT: 17px; TEXT-INDENT: 0px; PADDING-LEFT: 10px; WIDTH: 45px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left center; FLOAT: left; HEIGHT: 17px
+}
+.per_y {
+	BACKGROUND-IMAGE: url(images/pmlc_icon2.gif); LINE-HEIGHT: 17px; TEXT-INDENT: 0px; PADDING-LEFT: 10px; WIDTH: 45px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left center; FLOAT: left; HEIGHT: 17px
+}
+.per_o {
+	BACKGROUND-IMAGE: url(images/pmlc_icon3.gif); LINE-HEIGHT: 17px; TEXT-INDENT: 0px; PADDING-LEFT: 10px; WIDTH: 45px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left center; FLOAT: left; HEIGHT: 17px
+}
+.per_r {
+	BACKGROUND-IMAGE: url(images/pmlc_icon4.gif); LINE-HEIGHT: 17px; TEXT-INDENT: 0px; PADDING-LEFT: 10px; WIDTH: 45px; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: left center; FLOAT: left; HEIGHT: 17px
+}
+.huanhang2019 {
+	WORD-WRAP: break-word; WORD-BREAK: break-all
+}
+.n_ywnr_content {
+	LINE-HEIGHT: 180%; MARGIN-TOP: 5px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; HEIGHT: auto; OVERFLOW: hidden
+}
+.n_ywnr_content P {
+	TEXT-INDENT: 2em; MARGIN: 0px auto
+}
+.n_ywnr_content DIV {
+	PADDING-LEFT: 2em; OVERFLOW: hidden
+}
+.n_ywnr_content .FormulaDiv {
+	
+}
+.n_ywnr_content TABLE {
+	BORDER-BOTTOM: #333 1px solid; BORDER-LEFT: #333 1px solid; BORDER-COLLAPSE: collapse; WORD-WRAP: break-word; WORD-BREAK: break-all; BORDER-TOP: #333 1px solid; BORDER-RIGHT: #333 1px solid
+}
+.n_ywnr_content TABLE TD {
+	BORDER-BOTTOM: #333 1px solid; BORDER-LEFT: #333 1px solid; WORD-WRAP: break-word; WORD-BREAK: break-all; BORDER-TOP: #333 1px solid; BORDER-RIGHT: #333 1px solid
+}
+.n_ywnr_content P.n_new_hui {
+	COLOR: #666
+}
+.n_ywnr_content P IMG {
+	WIDTH: 550px; HEIGHT: 250px
+}
+</STYLE>
+
+<META name=GENERATOR content="MSHTML 9.00.8112.16737"></HEAD>
+<BODY>
+<FORM id=form1 method=post name=form1 
+action=Report.aspx?LeftFile=45248428&amp;t=c>
+<DIV><INPUT id=__VIEWSTATE name=__VIEWSTATE 
+value=GmOYEgS2cxZ+iR5XlG2hc/xHR5Vy2i6GzuazGuMq5+0CZtmStKo34GXjIWQbRKuItBJ+GGx6HfV/+krxvtHdaJ8ixff3LlASU3902T94hMPWfdxfsRrxzNcQbXo= 
+type=hidden> </DIV>
+<DIV><INPUT id=__EVENTVALIDATION name=__EVENTVALIDATION 
+value=IVQOU7WK0SgizcHUK8Kj+fR9i3fExk8+WHOaN1FJXHEmUNVJxsmRZvEZs2cQt7h2dRe+5fimAPd4Ir5c2fzwnR3pwhKZta+V/XdktTCTyQ+/NZQ3N2A0y54Hsn9zWFRzX9e8Hg== 
+type=hidden> </DIV>
+<DIV style="BACKGROUND-IMAGE: url(images/pmlc_sy.gif)" id=report_all_bak 
+class=n_main>
+<DIV class=n_title>
+<DIV class=n_print>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD width=700></TD>
+    <TD width=25><IMG alt="" 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/n_btn_print.gif"> </TD>
+    <TD width=60><A class=n_table_prints href="javascript:print();">打印</A> </TD>
+    <TD id=save1 width=25><IMG style="CURSOR: pointer" onclick=AddReportTesk() 
+      alt="" src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/n_btn_save.gif"> </TD>
+    <TD id=save2 width=60><A style="CURSOR: pointer" id=downReport 
+      class=n_table_prints onclick=AddReportTesk()>保存</A> 
+</TD></TR></TBODY></TABLE></DIV>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_logo_left><A href="http://check.cnki.net/" target=_blank><IMG 
+      alt="" src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/jie_amlc.png"></A> 
+    </TD>
+    <TD class=n_logo_right><A href="http://check.cnki.net/" target=_blank><IMG 
+      alt="" src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/jie_zw.gif"></A> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_bodytop>
+<DIV class=n_bt>文本复制检测报告单<SPAN class=n_jie>(<SPAN 
+id=Label_Report_Type_Name>全文对照</SPAN>)</SPAN> </DIV>
+<TABLE style="BORDER-TOP: #035d03 2px solid" class=n_table_a border=0 
+cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR class=n_table_a_cos>
+    <TD colSpan=2>
+      <TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+        <TBODY>
+        <TR>
+          <TD class=n_text_red_a width=420>№:<SPAN 
+            id=Label_ReportID>ADBD2020R_20200529191758452484284862</SPAN> </TD>
+          <TD class=t_text_red_a width=60>检测时间： </TD>
+          <TD><SPAN id=Label_Apply_Time>2020-05-29 19:17:58</SPAN> 
+        </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD style="WIDTH: 100px" class=n_text_green>检测文献： </TD>
+    <TD style="WIDTH: 539px" class=n_text_block_a><SPAN 
+      id=Label_Title>基于区块链的医疗记录存储系统研究与开发</SPAN> 
+      <DIV style="DISPLAY: none" id=thisdiv><INPUT id=ReportTypeLbl 
+      name=ReportTypeLbl value=4> <INPUT id=FileIDLbl name=FileIDLbl 
+      value=45248428> <INPUT id=TitleLbl name=TitleLbl 
+      value=基于区块链的医疗记录存储系统研究与开发> </DIV></TD></TR>
+  <TR>
+    <TD style="WIDTH: 100px" class=n_text_green>作者： </TD>
+    <TD class=n_text_block_a><SPAN id=Label_Author>徐富</SPAN> </TD></TR>
+  <TR>
+    <TD style="WIDTH: 100px; VERTICAL-ALIGN: top" class=n_text_green>检测范围： </TD>
+    <TD class=n_text_block_bm><SPAN 
+      id=Label_Check_Range>中国学术期刊网络出版总库<BR>中国博士学位论文全文数据库/中国优秀硕士学位论文全文数据库<BR>中国重要会议论文全文数据库<BR>中国重要报纸全文数据库<BR>中国专利全文数据库<BR>图书资源<BR>优先出版文献库<BR>大学生论文联合比对库<BR>互联网资源(包含贴吧等论坛资源)<BR>英文数据库(涵盖期刊、博硕、会议的英文数据以及德国Springer、英国Taylor&amp;Francis 
+      期刊数据库等)<BR>港澳台学术文献库<BR>互联网文档资源<BR>源代码库<BR>CNKI大成编客-原创作品库<BR>个人比对库</SPAN> 
+    </TD></TR>
+  <TR>
+    <TD style="WIDTH: 100px" class=n_text_green>时间范围： </TD>
+    <TD class=n_text_block_a><SPAN 
+      id=Label_Time_Range>1900-01-01至2020-05-29</SPAN> </TD></TR></TBODY></TABLE>
+<DIV class=item_title>检测结果 </DIV>
+<DIV class=n_bgd_k2>
+<TABLE id=p1 class=n_table_b border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR class=n_table_b_cos>
+    <TD class=n_text_red_a width=160>去除本人已发表文献复制比： </TD>
+    <TD width=95><SPAN id=Label_SameAuthor>
+      <DIV class=per_y title=文字复制比>10.4%</DIV></SPAN></TD>
+    <TD class=n_text_red_a width=105>跨语言检测结果： </TD>
+    <TD style="TEXT-ALIGN: left"><SPAN id=Label_CE>
+      <DIV class=per_g title=文字复制比>0%</DIV></SPAN></TD></TR></TBODY></TABLE>
+<TABLE id=Table2 border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR class=n_table_b_cos>
+    <TD height=25 width=26><IMG 
+      style="BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none" 
+      alt="" src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/jie_yins.gif"> </TD>
+    <TD class=n_text_block_b6 width=184>去除引用文献复制比：<SPAN class=n_red_bold><SPAN 
+      id=Label_Quote>6.4%</SPAN></SPAN> </TD>
+    <TD width=27><IMG 
+      style="BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none" 
+      alt="" src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/jie_zongs.gif"> </TD>
+    <TD class=n_text_block_b6>总文字复制比：<SPAN class=n_red_bold> <SPAN 
+      id=Label_AllCopy>10.4%</SPAN></SPAN> </TD></TR></TBODY></TABLE>
+<TABLE id=Table3 border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR class=n_table_b_cos>
+    <TD width=26><IMG 
+      style="BORDER-BOTTOM-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none" 
+      alt="" src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/jie_dans.gif"> </TD>
+    <TD class=n_text_block_b6 colSpan=3>单篇最大文字复制比：<SPAN class=n_red_bold><SPAN 
+      id=Label_Single_Max_Similar>1.3%</SPAN></SPAN><A id=HyperLink_MaxCopy 
+      class=maxlink 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=JSGG201920003&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MDQ2MzlPQ1g5S3ZCUmw3MGtPUUF2cjNXQTJGckNVUjdxZll1Um1GeURtVzd2T0x6N01hYkc0SDlqT3I0OUZaNFE=" 
+      target=_blank>（区块链关键技术的研究进展）</A> </TD></TR></TBODY></TABLE>
+<TABLE class=n_table_a1 border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR class=n_qubr_fzb>
+    <TD class=n_text_Gm height=25 width=52>&nbsp; </TD>
+    <TD class=n_text_Gm width=158>重复字数：<SPAN 
+      class=n_text_block_bss>&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<SPAN 
+      id=Label_All_CopyWords>3958</SPAN> &nbsp;]</SPAN> </TD>
+    <TD class=n_text_Gm width=176>总字数：<SPAN 
+      class=n_text_block_bss>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<SPAN 
+      id=Label_All_Words>38229</SPAN>&nbsp;]</SPAN> </TD>
+    <TD class=n_text_Gm width=133><SPAN id=Label1>单篇最大重复字数：</SPAN> </TD>
+    <TD class=n_text_Gm width=110><SPAN class=n_text_block_bss>[&nbsp;<SPAN 
+      id=Label_Single_Max_Length>507</SPAN>&nbsp;]</SPAN> </TD></TR>
+  <TR class=n_qubr_fzb>
+    <TD class=n_text_Gm height=25 width=52>&nbsp; </TD>
+    <TD class=n_text_Gm width=158>总段落数：<SPAN 
+      class=n_text_block_bss>&nbsp;&nbsp;&nbsp;&nbsp;[&nbsp;<SPAN 
+      id=Label_All_Section>4</SPAN> &nbsp;]</SPAN> </TD>
+    <TD class=n_text_Gm width=176>前部重合字数：<SPAN 
+      class=n_text_block_bss>[&nbsp;<SPAN id=lb_qcf>1460</SPAN>&nbsp;]</SPAN> 
+</TD>
+    <TD class=n_text_Gm width=133><SPAN id=Label2>疑似段落最大重合字数：</SPAN> </TD>
+    <TD class=n_text_Gm width=110><SPAN class=n_text_block_bss>[&nbsp;<SPAN 
+      id=lb_yszdcf>2078</SPAN>&nbsp;]</SPAN> </TD></TR>
+  <TR class=n_qubr_fzb>
+    <TD class=n_text_Gm height=25 width=52>&nbsp; </TD>
+    <TD class=n_text_Gm width=158>疑似段落数：<SPAN 
+      class=n_text_block_bss>[&nbsp;<SPAN id=lb_yszj>4</SPAN> &nbsp;]</SPAN> </TD>
+    <TD class=n_text_Gm width=176>后部重合字数：<SPAN 
+      class=n_text_block_bss>[&nbsp;<SPAN id=lb_hcf>2498</SPAN>&nbsp;]</SPAN> 
+</TD>
+    <TD class=n_text_Gm width=243 colSpan=2>
+      <DIV id=danpian>疑似段落最小重合字数：&nbsp;<SPAN class=n_text_block_bss>[&nbsp;<SPAN 
+      id=lb_yszxcf>143</SPAN>&nbsp;]</SPAN> </DIV></TD></TR></TBODY></TABLE>
+<TABLE class=n_table_a2 border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR class=n_qubr_fzb>
+    <TD class=n_text_red_a_zb height=25 width=101>指&nbsp;&nbsp;&nbsp;&nbsp;标： 
+    </TD>
+    <TD width=20><IMG 
+      style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+      id=Image_Standard5 src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/wu.gif"> 
+    </TD>
+    <TD class=n_text_Gm width=80>疑似剽窃观点 </TD>
+    <TD width=20><IMG 
+      style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+      id=Image_Standard4 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/you.gif"> </TD>
+    <TD class="n_text_Gm " width=100>疑似剽窃文字表述 </TD>
+    <TD width=20><IMG 
+      style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+      id=Image_Standard3 src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/wu.gif"> 
+    </TD>
+    <TD class="n_text_Gm " width=90>疑自我剽窃 </TD>
+    <TD width=20></TD>
+    <TD class="n_text_Gm "></TD></TR>
+  <TR class=n_qubr_fzb>
+    <TD>&nbsp; </TD>
+    <TD><IMG 
+      style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+      id=Image_Standard6 src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/wu.gif"> 
+    </TD>
+    <TD class=n_text_Gm>一稿多投 </TD>
+    <TD><IMG 
+      style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+      id=Image_Standard7 src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/wu.gif"> 
+    </TD>
+    <TD class=n_text_Gm>过度引用 </TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD></TR></TBODY></TABLE>
+<TABLE class=n_table_a3 border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_table_a3_l width=86>表格： </TD>
+    <TD class=n_table_a3_r width=53><SPAN id=Label_Table_Number><A 
+      style="COLOR: red" 
+      href="http://webvpn.dlut.check.cnki.net/user/Report.aspx?LeftFile=45248428&amp;t=c#n_bgxxdz">3</A></SPAN> 
+    </TD>
+    <TD class=n_table_a3_l width=66>公式： </TD>
+    <TD class=n_table_a3_r width=83><SPAN id=Label_Formula>没有公式</SPAN> </TD>
+    <TD class=n_table_a3_l width=96>疑似文字的图片： </TD>
+    <TD width=110><SPAN id=Label_Image title=系统识别到的疑似将文字内容转换为图片显示的数量>0</SPAN> 
+      <SPAN id=Label_ImageTool title=系统识别到的疑似将文字内容转换为图片显示的数量></SPAN></TD>
+    <TD class=n_table_a3_l width=90>脚注与尾注： </TD>
+    <TD class=n_table_a3_r><SPAN id=Label_Note_Number>0</SPAN> 
+</TD></TR></TBODY></TABLE>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD height=25 width=20>&nbsp; </TD>
+    <TD style="TEXT-ALIGN: left; WIDTH: 58px">
+      <DIV class=per_y>20.8%</DIV></TD>
+    <TD width=50 align=left>(2078) </TD>
+    <TD class=n_text_block_a2><A 
+      href="http://webvpn.dlut.check.cnki.net/user/Report.aspx?LeftFile=45248428&amp;t=c#45248428_000">基于区块链的医疗记录存储系统研究与开发.doc_第1部分</A> 
+      （总9995字） </TD></TR>
+  <TR>
+    <TD height=25 width=20>&nbsp; </TD>
+    <TD style="TEXT-ALIGN: left; WIDTH: 58px">
+      <DIV class=per_y>14%</DIV></TD>
+    <TD width=50 align=left>(1294) </TD>
+    <TD class=n_text_block_a2><A 
+      href="http://webvpn.dlut.check.cnki.net/user/Report.aspx?LeftFile=45248428&amp;t=c#45248428_001">基于区块链的医疗记录存储系统研究与开发.doc_第2部分</A> 
+      （总9224字） </TD></TR>
+  <TR>
+    <TD height=25 width=20>&nbsp; </TD>
+    <TD style="TEXT-ALIGN: left; WIDTH: 58px">
+      <DIV class=per_y>1.5%</DIV></TD>
+    <TD width=50 align=left>(143) </TD>
+    <TD class=n_text_block_a2><A 
+      href="http://webvpn.dlut.check.cnki.net/user/Report.aspx?LeftFile=45248428&amp;t=c#45248428_002">基于区块链的医疗记录存储系统研究与开发.doc_第3部分</A> 
+      （总9305字） </TD></TR>
+  <TR>
+    <TD height=25 width=20>&nbsp; </TD>
+    <TD style="TEXT-ALIGN: left; WIDTH: 58px">
+      <DIV class=per_y>4.6%</DIV></TD>
+    <TD width=50 align=left>(443) </TD>
+    <TD class=n_text_block_a2><A 
+      href="http://webvpn.dlut.check.cnki.net/user/Report.aspx?LeftFile=45248428&amp;t=c#45248428_003">基于区块链的医疗记录存储系统研究与开发.doc_第4部分</A> 
+      （总9705字） </TD></TR></TBODY></TABLE>
+<DIV id=imgdiv class=n_k3>
+<DIV class=n_pic><IMG 
+style="BORDER-RIGHT-WIDTH: 0px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px" 
+id=Image1 src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/RedImage.png"> </DIV>
+<TABLE class=n_table_zs border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR id=huanse>
+    <TD class=n_text_block_b>（注释： </TD>
+    <TD width=6><IMG border=0 alt="" 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/20120320_b.gif"> </TD>
+    <TD class=n_text_block_b width=150>无问题部分 </TD>
+    <TD width=6><IMG border=0 alt="" 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/20120320_a.gif"> </TD>
+    <TD class=n_text_block_b width=150>文字复制比部分 </TD>
+    <TD width=6><IMG border=0 alt="" 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/20120320_c.gif"> </TD>
+    <TD class=n_text_block_b width=150>引用部分） </TD>
+    <TD class=n_text_block_b width=60></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV id=table_twobox1 class=n_new_pqgdim>
+<DIV id=Div2 class=n_new_pqgdims>
+<TABLE width=156>
+  <TBODY>
+  <TR>
+    <TD>指导教师审查结果 </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_new_pqgdimxNew>
+<DIV id=jsyj>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=610>
+  <TBODY>
+  <TR>
+    <TD style="WIDTH: 60px" class=n_text_Gm>指导教师： </TD>
+    <TD>吴迪 </TD></TR>
+  <TR>
+    <TD style="WIDTH: 60px" class=n_text_Gm>审阅结果： </TD>
+    <TD><SPAN id=scjgLbl></SPAN></TD></TR>
+  <TR>
+    <TD style="WIDTH: 60px; VERTICAL-ALIGN: top" class=n_text_Gm>审阅意见： </TD>
+    <TD><SPAN id=scyjLbl class=huanhang2019>指导老师未填写审阅意见</SPAN> 
+</TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV><!--------------------------------------------以上为公共部分------------------------------------------->
+<DIV class=n_bodymid>
+<DIV class=n_bodymid_bf>
+<TABLE class=n_table_jiebf border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bf_bt height=30 width=25>1. </TD>
+    <TD class=n_text_block_bs width=499><A 
+      name=45248428_000></A>基于区块链的医疗记录存储系统研究与开发.doc_第1部分 </TD>
+    <TD class=n_table_jiebf_zzs width=116>总字数：<SPAN 
+      class=n_text_block_bs>9995</SPAN> </TD></TR>
+  <TR>
+    <TD colSpan=3>
+      <TABLE class=n_table_jiebfs border=0 cellSpacing=0 cellPadding=0 
+width=640>
+        <TBODY>
+        <TR>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid; TEXT-INDENT: 1em" 
+            width=90>相似文献列表 </TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid" class=n_table_jiebf_fzb 
+          width=80></TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid" width=80></TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: left" 
+          class=n_table_jiebf_fzb colSpan=2></TD></TR>
+        <TR>
+          <TD style="TEXT-INDENT: 1em; WIDTH: 170px" 
+            class=n_table_jiebf_fzb>去除本人已发表文献复制比： </TD>
+          <TD width=80>
+            <DIV>20.8%(2078) </DIV></TD>
+          <TD class=n_table_jiebf_fzb width=80>文字复制比： </TD>
+          <TD width=80>
+            <DIV>20.8%(2078) </DIV></TD>
+          <TD style="TEXT-ALIGN: left" class=n_table_jiebf_fzb>疑似剽窃观点（0） 
+        </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>1 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=MOTO201709007&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=Mjk2NThRT0NYOUt2QlJsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc3dkJLQ0xmWWJHNEg5Yk1wbzlGWTQ=" 
+      target=_blank>基于区块链的医疗数据共享模型研究</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>4.0%（400） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>薛腾飞;傅群超;王枞;王新宴; - 《自动化学报》- 2017-08-21 2 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>是</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>2 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019666137.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MjI3MDR2QlJsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc3dkJWRjI2RjdXK0dORFBxSkViUElRT0NYOUs=" 
+      target=_blank>基于区块链的分布式文件存储系统的设计和实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>3.6%（362） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>杨伟杰(导师：高雅玙) - 《华中科技大学硕士论文》- 2019-05-01 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>3 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=MOTO201908008&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MDk5MzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc3dkJLQ0xmWWJHNEg5ak1wNDlGYklRT0NYOUt2QlJsNzA=" 
+      target=_blank>Medical Chain:联盟式医疗区块链系统</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>2.3%（227） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>张超;李强;陈子豪;黎祖睿;张震; - 《自动化学报》- 2019-01-04 1 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>是</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>4 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=YYKX202001009&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MTM5Nzc3dkJQRFRBZHJHNEhOSE1ybzlGYllRT0NYOUt2QlJsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc=" 
+      target=_blank>区块链节点存储优化方案</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>2.1%（209） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>江云超;何小卫;崔一举; - 《应用科学学报》- 2020-01-30 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>是</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>5 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019864873.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MDIzMDZSbDcwa09RQXZyM1dBMkZyQ1VSN3FmWXVSbUZ5RG1XN3ZCVkYyNkY3dStHdG5MckpFYlBJUU9DWDlLdkI=" 
+      target=_blank>基于区块链的电子病历存储系统的设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>2.1%（207） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>肖奇颖(导师：王洁) - 《大连理工大学硕士论文》- 2019-03-20 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>6 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=MOTO201604001&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MzE2NzN5RG1XN3ZCS0NMZlliRzRIOWZNcTQ5RlpZUU9DWDlLdkJSbDcwa09RQXZyM1dBMkZyQ1VSN3FmWXVSbUY=" 
+      target=_blank>区块链技术发展现状与展望</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.7%（166） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>袁勇;王飞跃; - 《自动化学报》- 2016-03-29 1 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>7 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=WXAQ20200320005&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MjIzODZacUZDRGxXN3pBSkZjPU1qWEtmN0c0SE5ITXJJMUZaT3NLWTMwOHpHVmc2RWw0UGd6cTJCdEVDN0g3UjdxZFor" 
+      target=_blank>区块链存储：技术与挑战</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.6%（164） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>蔡振华;林嘉韵;刘芳; - 《网络与信息安全学报》- 2020-03-23 0 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>是</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>8 </TD>
+    <TD class=n_text_G2 width=500>8_柳丹_区块链技术在医疗信息管理中的应用研究 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.5%（150） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>柳丹 - 《大学生论文联合比对库》- 2018-05-03 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>9 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019864850.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MDUwMjFyQ1VSN3FmWXVSbUZ5RG1XN3ZCVkYyNkY3dStHdG5KcjVFYlBJUU9DWDlLdkJSbDcwa09RQXZyM1dBMkY=" 
+      target=_blank>基于区块链的病历存储与共享系统设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.5%（149） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>周金萍(导师：郭成) - 《大连理工大学硕士论文》- 2019-03-20 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>10 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=ZGXN201905025&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=Mjg3NDVMRzRIOWpNcW85SFlZUU9DWDlLdkJSbDcwa09RQXZyM1dBMkZyQ1VSN3FmWXVSbUZ5RG1XN3ZCUHlyVFk=" 
+      target=_blank>区块链技术在智慧养老领域的应用</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.0%（100） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>包凡仁;陈思;何振宇;朱庆华; - 《中国信息界》- 2019-10-25 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>11 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=CBBQ201807075&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MjY5MjRSN3FmWXVSbUZ5RG1XN3ZCSmkvSmY3RzRIOW5NcUk5Q1lZUU9DWDlLdkJSbDcwa09RQXZyM1dBMkZyQ1U=" 
+      target=_blank>区块链数字版权保护技术应用前景分析</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.9%（93） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>龚雪; - 《传播与版权》- 2018-07-15 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>12 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=KJXY201913009&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MTkwNzJGeURtVzd2QkxpZlRkN0c0SDlqTnJJOUZiWVFPQ1g5S3ZCUmw3MGtPUUF2cjNXQTJGckNVUjdxZll1Um0=" 
+      target=_blank>区块链视角下基本医疗数据保护探析</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.5%（51） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>徐勤亚;李会; - 《江苏科技信息》- 2019-05-10 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>13 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1020001625.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MDYyNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc3dkJWRjI1SHJPNEg5Zk9xcEViUElRT0NYOUt2QlJsNzA=" 
+      target=_blank>基于THz-TDS与DFT的分子间相互作用与振动模式研究</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.5%（45） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>赵永红(导师：李智) - 《西安电子科技大学博士论文》- 2019-03-01 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>14 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1020700785.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MDU4Mjl0YkVxcEViUElRT0NYOUt2QlJsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc3dkJWRjI1SHJTNEg=" 
+      target=_blank>天基光载射频传输系统关键技术研究</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.5%（45） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>宗康(导师：朱江) - 《国防科技大学博士论文》- 2017-10-01 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>15 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=ZJPL201906035&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MjY3NzdZUU9DWDlLdkJSbDcwa09RQXZyM1dBMkZyQ1VSN3FmWXVSbUZ5RG1XN3ZCUHlmYllyRzRIOWpNcVk5R1k=" 
+      target=_blank>区块链的发展之路</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.4%（40） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>王达;王国强; - 《张江科技评论》- 2019-12-28 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>16 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=SXCW201606006&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MTU1NzNBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc3dkJOalhJZWJHNEg5Zk1xWTlGWW9RT0NYOUt2QlJsNzBrT1E=" 
+      target=_blank>区块链:信任背书大数据时代的可能性</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.4%（35） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>冯珊珊; - 《首席财务官》- 2016-03-23 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>17 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019690916.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MDUwOTc3dkJWRjI2RjdXeEh0ak5xWkViUElRT0NYOUt2QlJsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc=" 
+      target=_blank>基于区块链智能合约的可信存证系统研究与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.4%（35） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>曹迪迪(导师：陈伟) - 《南京邮电大学硕士论文》- 2019-12-09 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>18 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1016247876.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MTY1MTJxWkViUElRT0NYOUt2QlJsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEbVc3dkJWRjI2R0xHOEdkbkw=" 
+      target=_blank>面向自然问句的SPARQL查询生成方法研究与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（30） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>高小青(导师：陈平;俞杰) - 《西安电子科技大学硕士论文》- 2015-11-01 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class=n_qwdz_ywnr>
+<TABLE style="BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" id=table_item_list 
+class=n_bgd_biao border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR id=Repeater1_ctl00_tr_item>
+    <TD class=n_bgd_biao_b width=330 colSpan=2>原文内容 </TD>
+    <TD class=n_bgd_biao_bs width=310>相似内容来源 </TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" id=table1 
+class=n_bgd_biao border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=n_table_xu_a>1 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;31&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">采用中心化的存储方式，数据保存在医疗机构指定的中心数据库中，这种存储模式面临着数据共享、信息安全、隐私保护等问题。区块链<SPAN 
+      class=red_font>具有去中心化、不可篡改、安全可信的特点，适用于解决医疗数据存储</SPAN>面临的以上问题。为了应对当前EMR存在的问题，本文应用区块链技术设计并开发一个医疗记录存储与分享系统。以web网页的 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的病历存储与共享系统设计与实现&nbsp;&nbsp;&nbsp;&nbsp;周金萍-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            久。不仅仅是因为比特币的诞生和热度上升，作为比特币底层技术的区块链才被大众所知道。区块链是由系统参与者一同维护的<SPAN 
+            class=red_font>具有去中心化、防篡改、可追溯、共识开放的分布式数据存储技术，</SPAN>被称为分布式数据库或分布式账本。通俗点讲，区块链是一组囊括了一些数据信息的集合，而又彼此前后连接形成了区块链。区<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>2 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;33&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">权管理。患者拥有本人病历数据的控制权，医疗机构和研究人员需要向用户申请授权才能获取访问电子病历权限。最后针对系统设计的各<SPAN 
+      class=red_font>模块功能，分别设计测试用例进行单元测试，并对测试结果进行分析。 
+      </SPAN>本系统将web客户端与区块链存储联合起来，试图解决传统EMR系统存在的数据所有权错位和隐私安全问题。是一次尝试，证明了区 
+    </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>面向自然问句的SPARQL查询生成方法研究与实现&nbsp;&nbsp;&nbsp;&nbsp;高小青-《西安电子科技大学硕士论文》-2015-11-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 回率，准确率和 F 值。测试集用 
+            Dbpedia，测试问句包括 QALD 相关的三个问句集。同时描述了各个 <SPAN 
+            class=red_font>模块的详细测试过程和测试结果，并对测试结果进行分析。 </SPAN>1.4 论文组织结构 
+            这篇论文主要分为七个章节，下面分别介绍每个章节的主要内容和工作成果： 
+      第一章：绪论。主<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>3 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;35&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">来，试图解决传统EMR系统存在的数据所有权错位和隐私安全问题。是一次尝试，证明了区块链技术应用于医疗数据领域的可行性，为<SPAN 
+      class=red_font>解决医疗记录数据隐私安全性差、共享难等问题提出了一种新的思路。 </SPAN>Research and 
+      Development of Medical Record Storage System Ba </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            医疗信息的安全共享系统。实现数据跨平台、跨机构地实现数据共享，利用区块链完成对数据的安全共享及可靠存储。该系统为<SPAN 
+            class=red_font>解决电子病历数据共享难、安全性差等问题提出了一种新的思路。</SPAN>在区块链与医疗领域相结合的后续研究中，可能会有以下几个方面的问题及方向：（1） 
+            使用 IPFS 弥补区块链数据存<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>4 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;65&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">术应用于医疗数据领域的可行性，为解决医疗记录数据隐私安全性差、共享难等问题提出了一种新的思路。 
+      Research <SPAN class=red_font>and Development of Medical Record Storage 
+      System Based on Blockch</SPAN>ain Abstract With the rapid development of 
+      Internet techno </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的病历存储与共享系统设计与实现&nbsp;&nbsp;&nbsp;&nbsp;周金萍-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 大连理工大学硕士 2019 
+            基于区块链的病历存储与共享系统设计与实现 Design <SPAN class=red_font>and Implementation 
+            of Medical Record Storage and Sharing System Based on 
+            Blockch</SPAN>ain 
+            周金萍郭成软件工程（专业学位）医疗记录是高度私密和有价值的数据,因此医疗记录的存储和共享面临着巨大<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>5 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;158&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">ization 1 文献综述 1.1 研究背景和意义 
+      2008年，比特币[1]问世，作为比特币的基础技术框架，<SPAN 
+      class=red_font>区块链技术开始进入人们的视野。随着比特币的快速发展和应用，其相关技术也逐渐成为学术界热门研究话题，基于区块链的研究和应用呈现出爆发式增长趋势，被认为是继大型计算机、个人电脑、移动互联网、社交网络之后计算范式的第五次颠覆性创新，是继血亲信用、贵金属信用、央行纸币信用之后的人类信用进化史上的第四个里程碑[2]。区块</SPAN>链的本质是分布式存储账本，账本是由多个区块按照时间顺序排列组合形成的线性的链表，账本中存储着网络世界中的交易信息，可以看 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术发展现状与展望&nbsp;&nbsp;&nbsp;&nbsp;袁勇;王飞跃;-《自动化学报》-2016-03-29 
+            1（是否引证：<SPAN class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. tem,NationalUniversity 
+            of Defense Technology,Changsha 410073<SPAN 
+            class=red_font>研究与应用也呈现出爆发式增长态势,被认为是继大型机、个人电脑、互联网、移动/社交网络之后计算范式的第五次颠覆式创新,是人类信用进化史上继血亲信用、贵金属信用、央行纸币信用之后的第四个里程碑[1].区块</SPAN>链技术是下一代云计算的雏形,有望像互联网一样彻底重塑人类社会活动形态,并实现从目前的信息互联网向价值互联网的转变.区块链<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的医疗数据共享模型研究&nbsp;&nbsp;&nbsp;&nbsp;薛腾飞;傅群超;王枞;王新宴;-《自动化学报》-2017-08-21 
+            2（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            有许多弱点和需要改进的地方.例如不具备预测模块、不具备机器学习算法的能力以及不具备更广泛的数据存储能力.4总结和展望随着<SPAN 
+            class=red_font>区块链技术的快速发展,这一新兴技术会逐步成为热点研究课题.医疗领域区块链的研究</SPAN>已经备受关注,本文提出的医疗数据共享模型可以帮助现有医疗机构的数据中心进行转型,以满足越来越多的医疗数据安全存储、共享等<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链:信任背书大数据时代的可能性&nbsp;&nbsp;&nbsp;&nbsp;冯珊珊;-《首席财务官》-2016-03-23（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            网TCP/IP协议让我们进入了信息自由传递的时代,区块链的创新将把我们带入信息的自由公证时代。区块链是人类信用进化史上继<SPAN 
+            class=red_font>血亲信用、贵金属信用、央行纸币信用之后第四个里程碑,</SPAN>很有希望缓解我国目前公信力稀缺的社会痛点,在全球市场汇通、知识产权保护、财产微公证、物联网金融、智能协议等诸多领域有广泛<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链的发展之路&nbsp;&nbsp;&nbsp;&nbsp;王达;王国强;-《张江科技评论》-2019-12-28（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            2017年以来，区块链（Blockchain）一直是社会热议的高频词汇，其技术成为互联网行业竞相追逐的新风口，区块链也被<SPAN 
+            class=red_font>认为是继大型计算机、个人电脑、互联网、移动/社交网络之后计算范式的第五次颠覆性创新。</SPAN>出了所涉及的关键技术。此外，一些学者也对区块链技术给出了自己的理解，如袁勇、王飞跃在其《区块链技术发展现状与展望》中认为<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>6 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;81&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">信任基础的实现网络价值传输的分布式数据库技术。由于其天然的去中心化特性，不仅支持自动执行的智能合约等可扩展性应用，还注重<SPAN 
+      class=red_font>数据安全和隐私保护等关键技术，使得区块链技术不仅可以成功应用于数字加密货币领域, 
+      同时在经济金融、物联网供应链和社会公共服务领域中也存在广泛的应用场景[3]。 
+      </SPAN>传统的医疗机构以纸质版的形式保存患者的医疗数据，形式单一且检索困难。随着互联网技术的飞速发展，医疗行业也呈现出信息化的发 
+    </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术发展现状与展望&nbsp;&nbsp;&nbsp;&nbsp;袁勇;王飞跃;-《自动化学报》-2016-03-29 
+            1（是否引证：<SPAN class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            有分布式高冗余存储、时序数据且不可篡改和伪造、去中心化信用、自动执行的智能合约、安全和隐私保护等显著的特点,这使得区块链<SPAN 
+            class=red_font>技术不仅可以成功应用于数字加密货币领域,同时在经济、金融和社会系统中也存在广泛的应用场景.</SPAN>根据区块链技术应用的现状,本文将区块链目前的主要应用笼统地归纳为数字货币、数据存储、数据鉴证、金融交易、资产管理和选举投<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术在智慧养老领域的应用&nbsp;&nbsp;&nbsp;&nbsp;包凡仁;陈思;何振宇;朱庆华;-《中国信息界》-2019-10-25（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            对申请专利的内容进行逐一分析后可以发现，这些专利都是各类信息系统及平台的形式表现。并且，其中都应用了区块链技术进行一定的<SPAN 
+            class=red_font>数据存储与安全可靠保障，对于区块链技术的应用</SPAN>有着明确的方向。除了区块链应用于智慧养老领域的专利技术探索，区块链与智慧养老领域实体产业相结合也得到了初步的发展。全球首<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>7 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;47&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">以纸质版的形式保存患者的医疗数据，形式单一且检索困难。随着互联网技术的飞速发展，医疗行业也呈现出信息化的发展趋势。EMR<SPAN 
+      class=red_font>（Electronic Medical 
+      Record，电子病历）使用计算机存储病人的医疗数据，</SPAN>记录了患者在医院治疗过程中产生的原始数据。2008年到2015年，护理医院采用Basic 
+      EHR (Basic Elec </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>8_柳丹_区块链技术在医疗信息管理中的应用研究&nbsp;&nbsp;&nbsp;&nbsp;柳丹-《大学生论文联合比对库》-2018-05-03（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. （Laboratory 
+            Information System, LIS）等子系统。下面将介绍这些子系统：电子病历系统<SPAN 
+            class=red_font>（Electronic Medical Record 
+            ,EMR）主要应用于医院医疗档案科。</SPAN>是以电子化方式记录患者就诊的信息，如：患者基本信息、病程记录、检查检验结果、医嘱、手术记录、护理记录等，其中既有结构化信<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>8 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;37&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">大都采用中心化的存储方式，将电子病历存储到每个医疗机构指定的中心数据库中。这种中心化的存储模式存在着数据泄露的风险，一旦<SPAN 
+      class=red_font>数据库遭到攻击，可能会导致数据流失，不能保证患者信息隐私安全；同时，数据由</SPAN>各个医疗机构单方面保管，很容易出现“信息孤岛”问题，患者不能随时查看和保管自己的病历数据，由于企业之间存在差异化，医疗数 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            据不能共享，若病人丢失了自身的病历信息，则去其他医院就医时不能快速获得本人医疗数据，给患者带来很大不便，且中心化<SPAN 
+            class=red_font>数据库遭受攻击时，可能会导致数据流失，不能保证患者数据的安全隐私。数据由</SPAN>中心化机构保管，患者对自身相关病历数据信息没有管理能力，导致出现医疗纠纷时，患者会处于十分不利的位置，不能保障患者的<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>9 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;32&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">算的快速发展，数据存储规模呈指数级增长，对存储技术有更大容量、高可靠性与低时延的需求。将区块链技术应用到存储系统中，可以<SPAN 
+      class=red_font>提高现有存储系统的安全性和可扩展性。当前区块链技术应用在存储系统</SPAN>中有以下三个方面[5]：基于区块链构建的去中心化存储系统，基于区块链优化已有存储系统，区块链系统自身的存储方法和优化，如 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链存储：技术与挑战&nbsp;&nbsp;&nbsp;&nbsp;蔡振华;林嘉韵;刘芳;-《网络与信息安全学报》-2020-03-23 
+            0（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            据安全和系统架构的去中心化，解决机构间合作的信任和效率问题[1,2]。在分布式存储系统中引入区块链技术，可以 <SPAN 
+            class=red_font>提高存储系统的安全性和可扩展性。然而，将区块链应用到存储系统中，</SPAN>也带来了新的挑战，如区块链的查询性能瓶颈、存储空间开销增大等。如图 
+            1 所示，当前区块链技术与存储技术的结合<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>10 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;53&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">延的需求。将区块链技术应用到存储系统中，可以提高现有存储系统的安全性和可扩展性。当前区块链技术应用在存储系统中有以下三个<SPAN 
+      class=red_font>方面[5]：基于区块链构建的去中心化存储系统，基于区块链优化已有存储系统，区块链系统自身的存储方法和优化，</SPAN>如图1.1 
+      图1.1 区块链存储研究分类将区块链技术应用到存储系统中主要引起两方面变化，一方面，区块链账本存储文件 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链存储：技术与挑战&nbsp;&nbsp;&nbsp;&nbsp;蔡振华;林嘉韵;刘芳;-《网络与信息安全学报》-2020-03-23 
+            0（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            ，将其应用到存储系统中，有助于提高存储系统的数据安全性和系统可扩展性。当前区块链技术与存储技术的融合，主要分为 3 <SPAN 
+            class=red_font>方面：基于区块链构建的去中心化存储系统，基于区块链优化已有系统的存储性能和区块链系统自身的存储方法与优化。</SPAN>对这些工作进行了综述，讨论对比了当前典型的采用了区块链技术的存储系统，总结了区块链存储面临的主要挑战，并展望了区块链<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>11 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;30&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">1.1 
+      区块链存储研究分类将区块链技术应用到存储系统中主要引起两方面变化，一方面，区块链账本存储文件分片的元数据，另<SPAN 
+      class=red_font>一方面使用区块链虚拟货币作为奖励，鼓励用户积极提供存储空间。</SPAN>这种模式的存储系统具有隐私保护能力强、安全性强、响应速度快、下载速度快、闲置存储资源利用率高，存储激励能力强、存储空间开 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链存储：技术与挑战&nbsp;&nbsp;&nbsp;&nbsp;蔡振华;林嘉韵;刘芳;-《网络与信息安全学报》-2020-03-23 
+            0（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            框部分代表引入区块链机制之后的变化有两方面。一方面，区块链账本存储文件分片的元数据，可保证数据防篡改、可溯源。另<SPAN 
+            class=red_font>一方面，将区块链发行的虚拟货币作为奖励，可以激励用户提供存储空间。 </SPAN>文件上传的算法如下：算法 
+            1 文件上传第 1 期 蔡振华等：区块链存储：技术与挑战 ·3· chunks = 
+      <BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>12 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;190&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">、闲置存储资源利用率高，存储激励能力强、存储空间开销大的特点。国外科研机构已经有一些开源的基于区块链的去中心化存储项目，<SPAN 
+      class=red_font>IPFS（InterPlanetary File System 
+      星际文件系统）是一个点对点的分布式文件系统[6]，目的在于改变现有的 HTTP 
+      协议，致力于构建一个去中心化的分散的存储网络，打造一个全新的去冗余的互联网世界，而Filecoin 作为IPFS 
+      激励层实现，通过价值激励来鼓励更多的节点加入 IPFS 网络；但是 Filecoin 
+      的服务方式是让服务商和用户相互选择，</SPAN>在很多情形下会降低存储空间的利用率。 Sia 
+      由NebulousLabs公司创建，专注于为去中心化存储模式提供一个功能完 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的分布式文件存储系统的设计和实现&nbsp;&nbsp;&nbsp;&nbsp;杨伟杰-《华中科技大学硕士论文》-2019-05-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. Sia 采用 POW 
+            共识机制来对交易进行验证，无法适用于高频实时结算的场景。（2）IPFS/Filecoin：<SPAN 
+            class=red_font>IPFS（Inter Planetary File 
+            System）是一个点对点的分布式文件系统，目标在于改变现有的 HTTP 协议，构建一个去冗余的互联网世界[27]。而Filecoin 
+            是 IPFS 上面的激励层，来鼓励更多的节点加入 IPFS 网络。但是 Filecoin 
+            的服务方式是让服务商和用户相互选择，</SPAN>因此存储空间的利用率会相对偏低。（3）Storj：Storj 
+            是一个云存储项目[28]，本质上和区块链没有关系，只是<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. ，可更改为 Couch DB。 
+            大连理工大学专业学位硕士学位论文 - 13 - 2.3 星际文件系统 IPFS <SPAN 
+            class=red_font>IPFS（The Inter Planetary File 
+            System）是一种点对</SPAN>点分布式文件系统，旨在将所有的计算设备链接到同一文件系统。到目前为止，HTTP 
+            一直是最成功的“分布式文件系统”<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>13 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;50&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">以看做区块链世界里的“google”。数据库与区块链技术的结合，可以克服现有中心数据库存在的安全性低、数据易泄露等问题，<SPAN 
+      class=red_font>具有代表性的区块链数据库有BigchainDB，ChainSQL，RecordsKeeper等项目，</SPAN>具有去中心化、不可篡改、可溯源以及吞吐量高的优势。ChainSQL[8]将区块链与传统数据库相结合，构建了一种基于区块链 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链存储：技术与挑战&nbsp;&nbsp;&nbsp;&nbsp;蔡振华;林嘉韵;刘芳;-《网络与信息安全学报》-2020-03-23 
+            0（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            述问题，数据库和区块链技术的结合，可以构建既有数据管理能力，又具备去中心化、防篡改等特性的区块链数据库。 <SPAN 
+            class=red_font>具有代表性的区块链数据库有 BigchainDB]、 ChainSQL、RecordsKeeper 
+            等项目，</SPAN>具有吞吐量高 、 防 篡 改 、 可 溯 源 和 去 中 心 化 的 特 点 。 BigchainDB 能够存储 
+            <BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>14 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;37&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">了两种系统的优点，能随时随地恢复数据库表，并简化了区块链应用的开发，具有历史记录不可篡改、提供审计服务、本地数据库插件式<SPAN 
+      class=red_font>管理等多种特性。对于大文件存储的场景，区块链往往需要底层的文件系统做支撑，</SPAN>采用链上链下组合存储的方式，文献[9]将区块链技术和文件存储系统相结合，将真实文件存储在底层文件系统中，区块链上则保存文 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的分布式文件存储系统的设计和实现&nbsp;&nbsp;&nbsp;&nbsp;杨伟杰-《华中科技大学硕士论文》-2019-05-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            链技术和文件存储系统相结合，底层文件系统负责存储真实文件，区块链来管理文件的访问权限，从而实现一个个人隐私信息的<SPAN 
+            class=red_font>管理平台。对于大文件的存储，区块链需要底层的文件系统作为支撑，</SPAN>同样对于分布式存储，为广泛吸引边缘存储设备的加入，也需要区块链来提供去中心化的激励机制，两者相互结合，相互促进。<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>15 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;60&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">存储的场景，区块链往往需要底层的文件系统做支撑，采用链上链下组合存储的方式，文献[9]将区块链技术和文件存储系统相结合，<SPAN 
+      class=red_font>将真实文件存储在底层文件系统中，区块链上则保存文件摘要等公共属性信息，利用哈希函数的唯一性和不可逆性来实现对数据的验证，</SPAN>管理文件的访问权限，从而实现一个个人隐私信息的管理平台。区块链技术与分布式存储，需要去中心化的激励机制吸引网络边缘存储设 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的分布式文件存储系统的设计和实现&nbsp;&nbsp;&nbsp;&nbsp;杨伟杰-《华中科技大学硕士论文》-2019-05-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            式一般用于简单的、重要的信息存储，如商品溯源[22]等场景；第二，针对于大文件的存储，区块链往往与文件系统相结合，将<SPAN 
+            class=red_font>真实文件存放在文件系统，而区块链存储文件摘要等属性信息，利用哈希函数的唯一性和不可逆性来实现对数据的验证。</SPAN>Proof 
+            of Existence 
+        项目[23]将文件摘要等信息计入区块链，用于证明某特定文件的存在性和所有权；文<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>16 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;37&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">公共属性信息，利用哈希函数的唯一性和不可逆性来实现对数据的验证，管理文件的访问权限，从而实现一个个人隐私信息的管理平台。<SPAN 
+      class=red_font>区块链技术与分布式存储，需要去中心化的激励机制吸引网络边缘存储设备的加入，</SPAN>两者相互结合，相互促进。区块链可以看做是一个分布式的数据库，其自身存储也存在着一些问题，在存储空间方面，网络中每个节 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的分布式文件存储系统的设计和实现&nbsp;&nbsp;&nbsp;&nbsp;杨伟杰-《华中科技大学硕士论文》-2019-05-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            针对于目前中心化存储存在存储费用高、隐私性低等问题，本文设计和实现了一个基于区块链技术的分布式文件存储系统，通过<SPAN 
+            class=red_font>区块链为分布式存储提供去中心化的激励机制，吸引了边缘存储资源的加入，</SPAN>降低了存储费用。文件系统将文件分块后存放在不同的文件节点，保证了文件的隐私性，同时将文件摘要、以及存储等信息记录 
+            <BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>17 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;52&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">总共有区块630950个，区块总量348GB，区块链膨胀问题造成了存储空间的庞大开销，基于此问题，比特币允许网络中存在轻<SPAN 
+      class=red_font>节点，该类节点选择以轻量级方式运行，只存储区块头内容而不必存储完整的区块数据，因而减少了节点的区块存储；</SPAN>在轻节点与全节点之外，也有人提出基于纠删码的区块链，减轻全节点的负担。纠删码（erasure 
+      coding，EC）是一种 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链节点存储优化方案&nbsp;&nbsp;&nbsp;&nbsp;江云超;何小卫;崔一举;-《应用科学学报》-2020-01-30（是否引证：<SPAN 
+            class=n_text_yz><SPAN class=n_text_green_normal>是</SPAN></SPAN>） 
+        </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 213.56 
+            GB.对于比特币节点而言，存储完整区块数据是其未来面临的巨大挑战.为了避免存储大量区块数据，如今许多区块链<SPAN 
+            class=red_font>节点选择以轻量级方式运行.该类节点只要存储区块头内容而不必存储完整的区块数据，因而减少了节点的区块存储.</SPAN>然而，增加轻量级节点的后果是：只有少数节点存储完整区块，这就使区块链逐渐趋于中心化，与区块链的去中心化理念相违背，因此有<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>18 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;95&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">，当冗余级别为N+M时，能容忍任意M个硬盘故障。纠删码节点只需保存编码区块，就可以恢复出完整区块，因此能够减轻存储负担；<SPAN 
+      class=red_font>文献[10]提出了一种 Fast 
+      同步算法，该算法只保存最近区块的状态数据而忽略较旧区块的状态数据，不仅减少了同步区块的状态数据，还提高了新节点加入区块链的效率；江云超等针对文献[11]提出</SPAN>的分片方案中存在的问题进行进一步优化[12]，首先分析区块链恶意节点概率并计算每个分片中区块的数量，然后获取区块链节点数 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链节点存储优化方案&nbsp;&nbsp;&nbsp;&nbsp;江云超;何小卫;崔一举;-《应用科学学报》-2020-01-30（是否引证：<SPAN 
+            class=n_text_yz><SPAN class=n_text_green_normal>是</SPAN></SPAN>） 
+        </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            中间交易数据转移到链下通道，而只将交易的开始与结束提交给比特币主链，减少了节点的区块交易存储.针对节点存储区块优化问题，<SPAN 
+            class=red_font>文献[5]提出了一种Fast同步算法.该算法只保存最近区块的状态数据而忽略较旧区块的状态数据，不仅减少了同步区块的状态数据，还提高了新节点加入区块链的效率.文献[6]提出</SPAN>了关于区块状态数据的剪枝方案，通过修剪每个区块的状态数据达到减少节点对于区块存储的目的.文献[7]提出的迷你区块链取消了<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>19 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;31&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">[11]提出的分片方案中存在的问题进行进一步优化[12]，首先分析区块链恶意节点概率并计算每个分片中区块的数量，然后获取<SPAN 
+      class=red_font>区块链节点数量以及分片中编号最大区块被恶意节点攻击的概率，计算</SPAN>出每个分片需要存储的副本数量，新方案在减少区块存储和提高新节点加入区块链效率方面有更明显的优势。除了存储容量方面的限制， 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链节点存储优化方案&nbsp;&nbsp;&nbsp;&nbsp;江云超;何小卫;崔一举;-《应用科学学报》-2020-01-30（是否引证：<SPAN 
+            class=n_text_yz><SPAN class=n_text_green_normal>是</SPAN></SPAN>） 
+        </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            近于无限.2分片副本数量第1节已经分析了在不同恶意节点概率下得到的每个分片中的区块数量，而分片需要存储的副本数量可以根据<SPAN 
+            class=red_font>区块链中的节点数量以及区块被恶意节点创建的概率计算得到.</SPAN>首先由式（4）算得区块链中第i个区块被恶意节点创建的概率为Pn-i=1-n-ik=0λke-λk!1-qp(n-i-k)<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>20 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;32&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">块链恶意节点概率并计算每个分片中区块的数量，然后获取区块链节点数量以及分片中编号最大区块被恶意节点攻击的概率，计算出每个<SPAN 
+      class=red_font>分片需要存储的副本数量，新方案在减少区块存储和提高新节点加入区块</SPAN>链效率方面有更明显的优势。除了存储容量方面的限制，在I/O性能方面，区块链的底层数据结构和架构设计在很大程度上影响着系统 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链节点存储优化方案&nbsp;&nbsp;&nbsp;&nbsp;江云超;何小卫;崔一举;-《应用科学学报》-2020-01-30（是否引证：<SPAN 
+            class=n_text_yz><SPAN class=n_text_green_normal>是</SPAN></SPAN>） 
+        </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            为1.00，分片中的区块数量接近于无限.2分片副本数量第1节已经分析了在不同恶意节点概率下得到的每个分片中的区块数量，而<SPAN 
+            class=red_font>分片需要存储的副本数量可以根据区块链中的节点数量以及区块</SPAN>被恶意节点创建的概率计算得到.首先由式（4）算得区块链中第i个区块被恶意节点创建的概率为Pn-i=1-n-ik=0λke<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>21 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;116&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">高区块链系统的查询性能。 1.2.2 
+      区块链在医疗系统研究现状起源于比特币的区块链技术因其自身的特性引起了社会各界<SPAN 
+      class=red_font>广泛的关注，为推动区块链技术和产业发展，国务院工业和信息化部软件服务业指导中国电子技术标准化研究院，联合蚂蚁金融去、万向控股、微众银行等骨千企业，开展区块链技术和应用发展趋势专题研究，发布了《中国区块链技术和应用发展白皮书（2016</SPAN>）》[15]。包括政府部门在内，许多企业和研究机构纷纷成立专门的区块链实验室，由此催生了许多区块链研究项目。目前区块链的 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的医疗数据共享模型研究&nbsp;&nbsp;&nbsp;&nbsp;薛腾飞;傅群超;王枞;王新宴;-《自动化学报》-2017-08-21 
+            2（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            医疗数据应用、医疗数据存储分掌$医疗償息交易、预测分析等.区块链技术的快速发展引起了政府部门、金融机构、企业和资本市场的<SPAN 
+            class=red_font>广泛关注.为推动区块链技术和产业发展,M务院工业和信息化部信息化和软件服务业司指导中国电子技术标准化研究院,联合蚂蚁金融去、万向控股、微众银行等骨千企业,开展区块链技术和应用发展趋势专题研究,发布了《中厲区块链技术和应用发展白皮书</SPAN>(2〇l6)》!5!.Lvan等提出了一于区块链安全存储病人医疗记录的方法Shrier等提出采用美_麻省理工学院的OPA<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链数字版权保护技术应用前景分析&nbsp;&nbsp;&nbsp;&nbsp;龚雪;-《传播与版权》-2018-07-15（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            的普遍担忧问题,利用科学严谨的数学方法证明了数据的真实性。为推动区块链技术和产业发展,早在2006年,工信部信息化和软件<SPAN 
+            class=red_font>服务业司指导中国电子技术标准研究院,联合蚂蚁金融云、万向控股等互联网科技骨干企业,开展区块链技术和应用发展趋势专题研究,编纂形成《中国区块链技术和应用发展白皮书(2016)》,</SPAN>白皮书总结了区块链发展现状和趋势,分析了核心关键技术及典型应用场景,提出了我国区块链技术发展路线图和标准化路线图等相关建<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>22 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;37&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">微众银行等骨千企业，开展区块链技术和应用发展趋势专题研究，发布了《中国区块链技术和应用发展白皮书（2016）》[15]。<SPAN 
+      class=red_font>包括政府部门在内，许多企业和研究机构纷纷成立专门的区块链实验室，由此催生了</SPAN>许多区块链研究项目。目前区块链的应用主要有金融科技领域、数字版权、物流溯源领域以及供应链领域，在医疗方面的应用研究相对较 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术在智慧养老领域的应用&nbsp;&nbsp;&nbsp;&nbsp;包凡仁;陈思;何振宇;朱庆华;-《中国信息界》-2019-10-25（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            康有不利影响的相关风险。区块链用于智慧养老领域的痛点起源于比特币的区块链因其自身的特性吸引了大量企业的投入和学者的关注。<SPAN 
+            class=red_font>包括政府部门在内，不少企业和研究机构纷纷设立区块链实验室并取得了</SPAN>一定的成果，例如清华大学、北京大学、阿里巴巴达摩院等设立的区块链实验室。关于区块链的国际会议诸如Internationa<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>23 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;54&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">书（2016）》[15]。包括政府部门在内，许多企业和研究机构纷纷成立专门的区块链实验室，由此催生了许多区块链研究项目。<SPAN 
+      class=red_font>目前区块链的应用主要有金融科技领域、数字版权、物流溯源领域以及供应链领域，在医疗方面的应用研究相对较少。 
+      </SPAN>国外区块链医疗研究案例。通常，医疗记录的医疗信息由医院单独管理，对患者有访问权限，这样患者不能掌握自己医疗数据的第一手记 
+    </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链视角下基本医疗数据保护探析&nbsp;&nbsp;&nbsp;&nbsp;徐勤亚;李会;-《江苏科技信息》-2019-05-10（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            院关于印发“十三五”国家信息化规划的通知》表明,区块链在基本医疗数据保护方面,日益受到我国政府重视,未来将发挥重大作用。<SPAN 
+            class=red_font>目前区块链主要应用于金融领域,在医疗方面相对较少。</SPAN>庄伟萍[1]认为,区块链技术易于开放医疗数据,可降低数据成本,提高数据安全性;薛腾飞等[2]利用改进的DPOS共识机制提<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>24 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;30&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">种共识机制造成了一定的算力浪费；Xhafa F 
+      等[17]提出了一个基于云的医疗记录方案，采用对称加密算法，不泄漏医生和<SPAN 
+      class=red_font>患者的个人信息以及病情的详细描述，对称秘钥采用基于属性的加密</SPAN>方案进行封装，但该系统有一个缺点是需要依赖一个称之为全局权威( 
+      Global Authority，GA) 的完全可信的第 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 患者退出通道对应角色 患者输入 
+            患者数字证书，密钥输出 验证结果（4） 数据加密为了保证<SPAN 
+            class=red_font>患者个人电子病历的隐私，系统采用了基于属性的加密</SPAN>技术（CP-ABE）来加密电子病历，在加密文件之前需要初始化加密模块，设置系统的安全参数，然后患者可以选择用户属<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>25 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;44&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">Authority，GA) 
+      的完全可信的第3方负责密钥管理，有违去中心化的理念；Shrier 等[18]借助MIT的 <SPAN 
+      class=red_font>OPAL/Enigma 
+      加密平台的安全特性，结合区块链，提出一个用于分析和存储医疗数据的</SPAN>解决方案，同时为医疗数据提供安全存储环境。国内医疗区块链研究案例。相较于国外，国内的研究相对较少，且大部分停留在理论 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的医疗数据共享模型研究&nbsp;&nbsp;&nbsp;&nbsp;薛腾飞;傅群超;王枞;王新宴;-《自动化学报》-2017-08-21 
+            2（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            白皮书(2〇l6)》!5!.Lvan等提出了一于区块链安全存储病人医疗记录的方法Shrier等提出采用美_麻省理工学院的<SPAN 
+            class=red_font>OPAL/Enigma加密平台;配合K块链技术可以创建一个用于存储和分析匿疗数据的</SPAN>安全环齒71.Kuo等采用g块链私链网络技术,创建了一个跨机构的医疗健康预测模型W,Ekblaw等提出一个新颖的去中心化<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>26 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;33&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">医疗数据提供安全存储环境。国内医疗区块链研究案例。相较于国外，国内的研究相对较少，且大部分停留在理论模型上。通过分析<SPAN 
+      class=red_font>医疗行业信息化现状，可以看出，各医疗机构间存在数据共享困难的问题，</SPAN>审查和校验数据需要花费大量的时间和资源，导致医生和研究人员在访问共享医疗数据时存在严格的限制。薛腾飞等[19]设计一个基 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>8_柳丹_区块链技术在医疗信息管理中的应用研究&nbsp;&nbsp;&nbsp;&nbsp;柳丹-《大学生论文联合比对库》-2018-05-03（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            方案,能满足病人对个人医疗数据的所有权和访问权限的控制以及对敏感医疗数据的安全存储。薛腾飞，傅群超等（2016）认为根据<SPAN 
+            class=red_font>医疗行业现状，各医疗机构间存在共享数据困难的问题，</SPAN>提出一个基于区块链的医疗数据共享模型，用以解决各医疗机构数据共享的难题。黄建华,江亚慧等（2018）认为区块链技术会对医<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>27 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;50&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">难的问题，审查和校验数据需要花费大量的时间和资源，导致医生和研究人员在访问共享医疗数据时存在严格的限制。薛腾飞等[19]<SPAN 
+      class=red_font>设计一个基于区块链的医疗数据共享模型（Medical Data Share 
+      Model，MDSM），</SPAN>提出两个概念，医疗机构联盟服务器群（Medical Institution Federate Servers, 
+      MIFS </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的医疗数据共享模型研究&nbsp;&nbsp;&nbsp;&nbsp;薛腾飞;傅群超;王枞;王新宴;-《自动化学报》-2017-08-21 
+            2（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            可以增加医疗健康产业中数据交换的价值.Bitiiealth机构研究如何采用区块链记录和认证全球的医疗健康数据.本文介绍和<SPAN 
+            class=red_font>设计了一个基于K±夬链的医疗数据分享■麵(Medical data share 
+            model,MDSM),</SPAN>If助解决医疗数据存储集中、安全共享难、数据可書度过度依赖组织机构等问题*实现去中心化、安全、不可篡改的医疗数据分雾该模<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>28 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;103&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">制。薛腾飞等[19]设计一个基于区块链的医疗数据共享模型（Medical 
+      Data Share Model，MDSM），<SPAN class=red_font>提出两个概念，医疗机构联盟服务器群（Medical 
+      Institution Federate Servers, MIFS）和审计联盟服务器群（Auditing Federate Servers, 
+      AFS），</SPAN>将医疗机构根据信用积分划分等级，高等级的节点机构加入MIFS成为代理，第二等级的机构加入AFS作为审计校验的节点，配合改 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD class=n_bgd_biao_c>Medical 
+            Chain:联盟式医疗区块链系统&nbsp;&nbsp;&nbsp;&nbsp;张超;李强;陈子豪;黎祖睿;张震;-《自动化学报》-2019-01-04 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            的应用相对较少,原因在于区块链的关注点局限在比特币等数字货币区块链系统上.国内,薛腾飞等[8]利用改进的DPOS共识机制<SPAN 
+            class=red_font>提出了一种医疗机构联盟服务器群(Medical institution feder-ate 
+            servers, MIFS)和审计联盟服务器群(Auditingfederate servers, 
+            AF</SPAN>S)相结合的医疗区块链系统MDSM.国外, 
+            Azaria等[9]利用以太坊区块链,实现了一个医疗区块链与大数据相结合的医<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的医疗数据共享模型研究&nbsp;&nbsp;&nbsp;&nbsp;薛腾飞;傅群超;王枞;王新宴;-《自动化学报》-2017-08-21 
+            2（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            储集中、安全共享难、数据可書度过度依赖组织机构等问题*实现去中心化、安全、不可篡改的医疗数据分雾该模型的主要特点有:1)<SPAN 
+            class=red_font>医疗机构联盥服务器群(Medical institutionfederate 
+            servers,</SPAN>MIPS) 
+            (Au-diting'federate_se_rve_rs:,AFS):根据医.穿資喔分布的现状可以发现,生<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>29 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;98&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">te Servers, 
+      MIFS）和审计联盟服务器群（Auditing Federate Servers, AFS），将<SPAN 
+      class=red_font>医疗机构根据信用积分划分等级，高等级的节点机构加入MIFS成为代理，第二等级的机构加入AFS作为审计校验的节点，配合改进的股份授权机制 
+      DPOS（Delegate Proof of State） 
+      </SPAN>实现共识，将数据存储在分布式数据库系统中减轻区块链上数据存储和高频访问时的压力，并有完备级客户端和轻量级客户端为用户提供 
+    </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的医疗数据共享模型研究&nbsp;&nbsp;&nbsp;&nbsp;薛腾飞;傅群超;王枞;王新宴;-《自动化学报》-2017-08-21 
+            2（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            S):根据医.穿資喔分布的现状可以发现,生要的医疗信息服务和主要的数据存储节点都部暑在大医院或者核心医疗机构.H此可以将<SPAN 
+            class=red_font>医疗机构划分等级,高等级的机构节点加入MIFS成为代理,第二等缀的机构加入AFS作为审计校验的节点模型中采用改进的股份授权证明机制(Delegate 
+            proof of 
+            stake,</SPAN>DP0S)实瑰节意之间的共识.2)医疗记录存储结构:亩定义一套房级存储结构,可以高效方便地传播.最后将所有数据的Merk<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>30 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;32&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">适用于解决各医疗机构共享数据的难题；MDSM医疗区块链启动时需要101个节点的MIFS和20个节点的AFS，也就是说至少<SPAN 
+      class=red_font>需要121 
+      所医院或医疗机构同时参与到区块链维护，针对其启动代价</SPAN>大的缺点，张超等[20]使用实用拜占庭容错算法 (Practical 
+      Byzantine fault tolerance </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD class=n_bgd_biao_c>Medical 
+            Chain:联盟式医疗区块链系统&nbsp;&nbsp;&nbsp;&nbsp;张超;李强;陈子豪;黎祖睿;张震;-《自动化学报》-2019-01-04 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            有20个节点的审计联盟服务器群(Auditing federate servers,AFS),也就是说该医疗区块链的启动<SPAN 
+            class=red_font>需要121所医院或医疗机构同时参与到区块链维护中,因此启动代价较大,</SPAN>不适合从早期探索到后期大规模成熟应用的渐进研究过程. 
+            Azaria等使用的以太坊区块链所采用的共识机制为POW算法,其维<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>31 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;99&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">20个节点的AFS，也就是说至少需要121 
+      所医院或医疗机构同时参与到区块链维护，针对其启动代价大的缺点，张超等[20]<SPAN class=red_font>使用实用拜占庭容错算法 
+      (Practical Byzantine fault tolerance, PBFT), 构建了一种既能以较少节点来启动运行, 
+      又不需要大量算力来维护的联盟式医疗区块链系统，</SPAN>适合早期探索与后期扩展，具有一定的优越性和较好的适用性；梅颖等[21]结合区块链和云存储技术，提出了一个用于个人医疗记录 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD class=n_bgd_biao_c>Medical 
+            Chain:联盟式医疗区块链系统&nbsp;&nbsp;&nbsp;&nbsp;张超;李强;陈子豪;黎祖睿;张震;-《自动化学报》-2019-01-04 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            者[6].它们并不适应医疗区块链的需求,即不需要大的算力维护,也不需要电子货币的产生,且节点数量较少、灵活可变.本文首次<SPAN 
+            class=red_font>使用实用拜占庭容错算法(Practical Byzantine faulttolerance, 
+            PBFT)[7],构建了一种既能以较少节点来启动运行,又不需要大量算力来维护的联盟式医疗区块</SPAN>链(Medical 
+            chain).1已有研究1.1 
+        PBFT算法实用拜占庭容错算法(PBFT)[7]由Castro和Li<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的病历存储与共享系统设计与实现&nbsp;&nbsp;&nbsp;&nbsp;周金萍-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            的假设，且这种受通过一定数量的节点替代全网所有节点形式权益的方式，与区块链的初衷去中心化宗旨有悖。（4） <SPAN 
+            class=red_font>实用拜占庭容错算法（Practical Byzantine Fault 
+            Tolerance，PBFT</SPAN>）[23]：是第一个被广泛得到应用的 BFT 算法，在 PBFT 算法中，至少要求有超过 
+            2/3 的节点不能是 -<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>32 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;37&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">, 
+      又不需要大量算力来维护的联盟式医疗区块链系统，适合早期探索与后期扩展，具有一定的优越性和较好的适用性；梅颖等[21]<SPAN 
+      class=red_font>结合区块链和云存储技术，提出了一个用于个人医疗记录安全存储和共享的健康链，</SPAN>链上保存医疗记录的公共信息、匿名身份和访问权限，而真正的医疗数据则加密保存在链下存储结构中，有效实现了患者对个人医疗数据 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术在智慧养老领域的应用&nbsp;&nbsp;&nbsp;&nbsp;包凡仁;陈思;何振宇;朱庆华;-《中国信息界》-2019-10-25（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            网租车场景中个人隐私保护问题，提出一种基于区块链的个人隐私保护机制。梅颖针对个人医疗记录共享过程中存在的安全和隐私问题，<SPAN 
+            class=red_font>结合区块链技术和云存储技术，提出了一个分布式的个人医疗记录安全存储和共享的方案，</SPAN>提出记录及其使用权限由个人所有和控制。医疗领域作为继金融领域之后区块链技术应用最多的领域，众多学者提出了基于区块链技术的<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>8_柳丹_区块链技术在医疗信息管理中的应用研究&nbsp;&nbsp;&nbsp;&nbsp;柳丹-《大学生论文联合比对库》-2018-05-03（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            场景,为电子健康档案建设带来新的研究思路。梅颖（2017）针对医疗信息系统中存在的医疗信息记录存储的安全和隐私保护问题,<SPAN 
+            class=red_font>结合区块链和云存储技术,提出了一个医疗记录安全存储方案,</SPAN>能满足病人对个人医疗数据的所有权和访问权限的控制以及对敏感医疗数据的安全存储。薛腾飞，傅群超等（2016）认为根据医疗行<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>33 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;47&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">个人医疗记录安全存储和共享的健康链，链上保存医疗记录的公共信息、匿名身份和访问权限，而真正的医疗数据则加密保存在链下存储<SPAN 
+      class=red_font>结构中，有效实现了患者对个人医疗数据的所有权和访问权限的控制以及对敏感医疗数据的安全存储。 
+      </SPAN>区块链技术在电子医疗领域的未来发展前景在很大程度上取决于区块链自身的成熟与发展，区块链的去中心化、不可篡改等特性是非常好 
+    </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>8_柳丹_区块链技术在医疗信息管理中的应用研究&nbsp;&nbsp;&nbsp;&nbsp;柳丹-《大学生论文联合比对库》-2018-05-03（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            可篡改、高信任性等特点来保存医疗服务中所产生的信息，通过加密技术、共识机制、智能合约等，使医疗数据安全保存于区块链的存储<SPAN 
+            class=red_font>结构中，从而有效地实现病人对个人医疗数据的所有权、访问权限的控制及对医疗信息的安全存储。 
+            </SPAN>本论文的研究工作主要包括三个部分: 
+            第一部分:在搜集和研读国内外相关文献及查阅现实资料(如政策条文)的基础上,对文献进<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>34 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;45&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">储的安全性； 3) 
+      链上数据全部加密存储，且需经过授权才能访问，确保数据共享时的保密性； 1.4 文章组织和结构 <SPAN 
+      class=red_font>本文共有五个章节，每章节的内容安排如下：第一章文献综述，首先介绍论文的研究背景和意义，</SPAN>之后从区块链的应用方向角度，分别分析了区块链技术在存储系统与医疗系统的国内外研究现状，然后详细介绍本文的研究方向和主要工 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>天基光载射频传输系统关键技术研究&nbsp;&nbsp;&nbsp;&nbsp;宗康-《国防科技大学博士论文》-2017-10-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. ，提出的设计方案提高了系统的传输性能。 
+            国防科技大学研究生院博士学位论文第 14 页根据论文的主要工作，<SPAN 
+            class=red_font>本文的结构安排如下：第一章是绪论，首先介绍了论文研究的背景与意义，</SPAN>然后对光载射频技术的应用场景和关键技术进行了综述，分析了系统理论模型和方案设计的国内外研究现状，最后介绍了论文的<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于THz-TDS与DFT的分子间相互作用与振动模式研究&nbsp;&nbsp;&nbsp;&nbsp;赵永红-《西安电子科技大学博士论文》-2019-03-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            内的指纹特征进行分析探讨，旨在发现分子间相互作用与太赫兹振动模式的关系以及分子间相互作用对太赫兹振动模式的贡献。<SPAN 
+            class=red_font>本文的研究内容和章节安排如下: 
+            第一章，绪论。首先介绍了论文的研究背景及意义，</SPAN>接着介绍了分子间相互作用的概念以及研究方法，然后介绍了太赫兹光谱技术以及太赫兹时域光谱技术在分子间相互作用检测方<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的分布式文件存储系统的设计和实现&nbsp;&nbsp;&nbsp;&nbsp;杨伟杰-《华中科技大学硕士论文》-2019-05-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. ；最后引入 BFT- DPOS 
+            共识机制，快速实现节点之间的数据一致性校验，来满足真实场景下用户的需求。全文的<SPAN 
+            class=red_font>章节安排如下：第一章，绪论。本章节首先介绍研究背景和意义，</SPAN>然后对 P2P 
+            存储系统的激励机制、区块链技术的原理和发展现状进行了调研，说明分布式系统和区块链技术结合的必要性<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链智能合约的可信存证系统研究与实现&nbsp;&nbsp;&nbsp;&nbsp;曹迪迪-《南京邮电大学硕士论文》-2019-12-09（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. （4） 
+            对文中提出的方法进行实验测试与分析，测试系统的功能、存证效率与安全性，分析系统的可信性与可行性。论文<SPAN 
+            class=red_font>章节安排第一章绪论，简要介绍了本文的研究背景，</SPAN>包括区块链与区块链存证。介绍了本文研究的目的与意义，并对论文主要工作进行了简要的内容阐述，最后给出论文结构安排。 
+            <BR></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV id=Repeater1_ctl00_Standard_Content class=n_ymnr_bz>
+<DIV class=n_ymnr_top>指&nbsp;&nbsp;&nbsp;&nbsp;标 </DIV>
+<DIV class=n_ymnr_top_s>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=620>
+  <TBODY></TBODY></TABLE>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=620>
+  <TBODY>
+  <TR>
+    <TD class=n_table_bz_gdh colSpan=2>疑似剽窃文字表述 </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>1. </TD>
+    <TD 
+      class=n_table_bz_gd>目前区块链的应用主要有金融科技领域、数字版权、物流溯源领域以及供应链领域，在医疗方面的应用研究相对较少。 
+    </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>2. </TD>
+    <TD class=n_table_bz_gd>本文共有五个章节，每章节的内容安排如下：第一章文献综述，首先介绍论文的研究背景和意义， 
+  </TD></TR></TBODY></TABLE></TABLE></DIV></DIV>
+<DIV class=n_bodymid_bf>
+<TABLE class=n_table_jiebf border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bf_bt height=30 width=25>2. </TD>
+    <TD class=n_text_block_bs width=499><A 
+      name=45248428_001></A>基于区块链的医疗记录存储系统研究与开发.doc_第2部分 </TD>
+    <TD class=n_table_jiebf_zzs width=116>总字数：<SPAN 
+      class=n_text_block_bs>9224</SPAN> </TD></TR>
+  <TR>
+    <TD colSpan=3>
+      <TABLE class=n_table_jiebfs border=0 cellSpacing=0 cellPadding=0 
+width=640>
+        <TBODY>
+        <TR>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid; TEXT-INDENT: 1em" 
+            width=90>相似文献列表 </TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid" class=n_table_jiebf_fzb 
+          width=80></TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid" width=80></TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: left" 
+          class=n_table_jiebf_fzb colSpan=2></TD></TR>
+        <TR>
+          <TD style="TEXT-INDENT: 1em; WIDTH: 170px" 
+            class=n_table_jiebf_fzb>去除本人已发表文献复制比： </TD>
+          <TD width=80>
+            <DIV>14%(1294) </DIV></TD>
+          <TD class=n_table_jiebf_fzb width=80>文字复制比： </TD>
+          <TD width=80>
+            <DIV>14%(1294) </DIV></TD>
+          <TD style="TEXT-ALIGN: left" class=n_table_jiebf_fzb>疑似剽窃观点（0） 
+        </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>1 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=JSGG201920003&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MjM5ODZxZll1Um1GeURuVXIvSkx6N01hYkc0SDlqT3I0OUZaNFFPQ1g5S3ZCUmw3MGtPUUF2cjNXQTJGckNVUjc=" 
+      target=_blank>区块链关键技术的研究进展</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>5.5%（507） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>李燕;马海英;王占君; - 《计算机工程与应用》- 2019-08-23 1 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>是</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>2 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019118947.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MTMyOTBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEblVyL0pWRjI2RjdLNUZ0aklxSkViUElRT0NYOUt2QlJsNzA=" 
+      target=_blank>基于区块链的电子病历存证系统的设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>2.4%（219） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>田林(导师：宋信敏;刘勇) - 《山东师范大学硕士论文》- 2019-06-10 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>3 </TD>
+    <TD class=n_text_G2 width=500>基于区块链的电子病历存证系统的设计与实现 - 道客巴巴 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>2.1%（190） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>- 《互联网文档资源（<A 
+      href="http://www.doc88.com/p-8542978912879.html" 
+      target=_blank>http://www.doc88.com/p-8542978912879.html</A>）》- 2019 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>4 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=KJSJ201929068&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MDkxNjFyQ1VSN3FmWXVSbUZ5RG5Vci9KTGlmWVpMRzRIOWpPcG85RGJJUU9DWDlLdkJSbDcwa09RQXZyM1dBMkY=" 
+      target=_blank>浅析区块链技术的特征和应用前景</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.5%（136） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>秦素平; - 《科技视界》- 2019-10-15 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>5 </TD>
+    <TD class=n_text_G2 width=500>20180902530 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.1%（99） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>郭振林 - 《高职高专院校联合比对库》- 2018-06-02 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>6 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1018096327.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MTg2MzYzV0EyRnJDVVI3cWZZdVJtRnlEblVyL0pWRjI2RnJPeEdOTE9xSkViUElRT0NYOUt2QlJsNzBrT1FBdnI=" 
+      target=_blank>大数据平台的监管系统的研究与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.1%（97） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>常媛媛(导师：宋美娜) - 《北京邮电大学硕士论文》- 2018-03-12 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>7 </TD>
+    <TD class=n_text_G2 width=500>1501177781_李光剑_基于VUE前端全栈平台的团购平台 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.1%（97） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>贾一帆 - 《高职高专院校联合比对库》- 2019-05-02 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>8 </TD>
+    <TD class=n_text_G2 
+      width=500>7204044_刘童_基于个性化学习资源的网络推学习平台的推荐与实现_(刘童V002)毕业论文初稿end </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.1%（97） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>刘童 - 《高职高专院校联合比对库》- 2019-06-02 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>9 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019185444.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MjIzNTVyM1dBMkZyQ1VSN3FmWXVSbUZ5RG5Vci9KVkYyNkY3S3dHOVhJcTVFYlBJUU9DWDlLdkJSbDcwa09RQXY=" 
+      target=_blank>区块链技术在专利申请与保护业务中的应用研究</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.7%（69） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>郭志强(导师：凡高娟) - 《河南大学硕士论文》- 2019-06-01 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>10 </TD>
+    <TD class=n_text_G2 width=500>172496_代威威_家庭理财收支系统 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.7%（60） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>张贵豪 - 《大学生论文联合比对库》- 2019-05-27 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>11 </TD>
+    <TD class=n_text_G2 width=500>酒店预订系统的设计与实现 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.5%（48） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>宋姝洁 - 《大学生论文联合比对库》- 2019-04-26 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>12 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019864850.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MjQ3NjdmWXVSbUZ5RG5Vci9KVkYyNkY3dStHdG5KcjVFYlBJUU9DWDlLdkJSbDcwa09RQXZyM1dBMkZyQ1VSN3E=" 
+      target=_blank>基于区块链的病历存储与共享系统设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.4%（38） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>周金萍(导师：郭成) - 《大连理工大学硕士论文》- 2019-03-20 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>13 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019044583.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MjM2NTViUElRT0NYOUt2QlJsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEblVyL0pWRjI2RjdPOEd0VEVySkU=" 
+      target=_blank>基于深度学习心电诊断系统的研究与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.4%（38） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>胡文博(导师：刘知青) - 《北京邮电大学硕士论文》- 2019-06-05 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>14 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=ZXDB201926023&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MTU1NzR2cjNXQTJGckNVUjdxZll1Um1GeURuVXIvSlB6WFBiTEc0SDlqT3FZOUhaNFFPQ1g5S3ZCUmw3MGtPUUE=" 
+      target=_blank>基于Spring Boot和Vue的火电SIS系统设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.4%（35） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>朱锋; - 《科技创新导报》- 2019-09-11 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>15 </TD>
+    <TD class=n_text_G2 width=500>基于威胁情报基础库的关联关系可视化 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.4%（35） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>蔡真真 - 《大学生论文联合比对库》- 2017-05-26 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>16 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1018038788.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MDQwMzFFcDVFYlBJUU9DWDlLdkJSbDcwa09RQXZyM1dBMkZyQ1VSN3FmWXVSbUZ5RG5Vci9KVkYyNkZyTzdGdGI=" 
+      target=_blank>基于病历文本语义分析的智能肝病辅助诊疗系统研究</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（31） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>浦东旭(导师：金心宇) - 《浙江大学硕士论文》- 2018-01-01 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>17 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1016116019.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MTIwNTJGeURuVXIvSlZGMjZHTEs1R05ITnBwRWJQSVFPQ1g5S3ZCUmw3MGtPUUF2cjNXQTJGckNVUjdxZll1Um0=" 
+      target=_blank>Hadoop自动化运维管理系统的设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（31） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>陈炼(导师：赵宏) - 《北京交通大学硕士论文》- 2016-06-01 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>18 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019210849.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MjczNTBSbUZ5RG5Vci9KVkYyNkY3RzVIdG5JcHBFYlBJUU9DWDlLdkJSbDcwa09RQXZyM1dBMkZyQ1VSN3FmWXU=" 
+      target=_blank>基于混沌系统和DNA计算的图像加密研究</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（30） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>喻文茜(导师：刘晔;欧阳春娟) - 《南昌大学硕士论文》- 2019-05-25 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>19 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019076025.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MDExNTBIT3FwRWJQSVFPQ1g5S3ZCUmw3MGtPUUF2cjNXQTJGckNVUjdxZll1Um1GeURuVXIvSlZGMjZGN08vR04=" 
+      target=_blank>数据驱动的结直肠肿瘤预后系统研发</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（30） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>高源(导师：李劲松) - 《浙江大学硕士论文》- 2019-01-03 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>20 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=HBDL201903003&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MTY5NDFYOUt2QlJsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEblVyL0pMUy9QWXJHNEg5ak1ySTlGWjRRT0M=" 
+      target=_blank>基于能源区块链网络的微电网经济调度模型</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（30） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>谢红玲;郑雅男;李燕青; - 《华北电力大学学报(自然科学版)》- 2019-05-30 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class=n_qwdz_ywnr>
+<TABLE style="BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" id=table_item_list 
+class=n_bgd_biao border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR id=Repeater1_ctl01_tr_item>
+    <TD class=n_bgd_biao_b width=330 colSpan=2>原文内容 </TD>
+    <TD class=n_bgd_biao_bs width=310>相似内容来源 </TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" id=table1 
+class=n_bgd_biao border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=n_table_xu_a>1 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;29&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">第三章需求分析，是系统整体要实现的功能和目标，通过分析现有<SPAN 
+      class=red_font>电子医疗系统中存在的问题，提出系统的功能需求与非功能需求。</SPAN>对于要实现的功能需求，从系统使用者的角度分为四个模块，分别为，系统管理配置模块，用户通用功能模块，患者专用操作模块和医疗 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存证系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;田林-《山东师范大学博士论文》-2019-06-10（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            各个部分的独立性有利于系统的并发执行能力，从而提高系统的工作效率。 3.3 本章小结 本章分析了基于区块链的<SPAN 
+            class=red_font>电子病历存证系统的功能需求和非功能需求。</SPAN>通过介绍各种功能需求来对系统的整体功能进行初步的介绍，为后面系统的概要设计打下基础。 
+            山东师范大学硕士学位论<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>2 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;31&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">功能模块，对每个模块的需求分别叙述；非功能性需求则从可用性、稳定性、安全性、低时延和可扩展性几个方面分别讨论。第四章<SPAN 
+      class=red_font>详细设计，是对电子医疗系统的详细设计与实现，对上一章中各个模块</SPAN>的功能需求仔细剖析，单独设计实现，内容包括整体操作流程、数据库设计、fabric链代码、后端业务逻辑、后端连接区块链、数 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>Hadoop自动化运维管理系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;陈炼-《北京交通大学硕士论文》-2016-06-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            系统数据库的巧念结构，巧巧结构及物理结构分别进行了设计说明。 34 北京交通大学硕±专业学位论文 系统<SPAN 
+            class=red_font>详细设计与实现 5系统详细设计与实现 
+            本章主要W各个模块</SPAN>分类来介绍系统详细设计与实现，W类围与时序图的方 
+            式来介绍了设计和实现过程，主要包括用户中也模块、权限管理模块、资<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>3 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;57&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">2.1 
+      P2P半分布式网络拓扑去中心化是区块链最显著的特征，网络参与者资格权限完全对等，正是由于P2P协议的存在，让<SPAN 
+      class=red_font>区块链可以实现点对点之间的价值传输。以比特币这一典型区块链应用代表为例，在一个没有中央银行且仅由用户组成的网络中，</SPAN>在P2P技术的支持下，虚拟货币可以在任何联网的计算机上进行挖掘和交易。相对于以往中心化机构的限制，去中心化提供的是一个更 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>浅析区块链技术的特征和应用前景&nbsp;&nbsp;&nbsp;&nbsp;秦素平;-《科技视界》-2019-10-15（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            各方达成共识后所形成的区块就是相关交易造成状态更新后参与者对这一结果的确认。2区块链技术的特征2. 1去中心化去中心化是<SPAN 
+            class=red_font>区块链最显著的特征。以比特币这一典型的区块链技术代表为例，在一个没有中央银行的且仅由用户组成的网络中，</SPAN>作为第一种分布式记账的虚拟货币，比特币的安全性与自由度得到许多用户的认可。这种去中心化的特性和相应技术的支持下，使得比特<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>4 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;31&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">所有交易merkle树根、难度值和随机数；而在以太坊区块链中，则还要包含叔父区块hash值，汽油费（gas）等更多信息。<SPAN 
+      class=red_font>区块体中存储的是之前一段时间内经过网络广播验证合法的交易信息。</SPAN>每一区块包含前一区块的hash值，通过哈希指针与前一区块首尾相连。新产生的区块加盖时间戳后只能追加到主链末尾，形成一条从 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于能源区块链网络的微电网经济调度模型&nbsp;&nbsp;&nbsp;&nbsp;谢红玲;郑雅男;李燕青;-《华北电力大学学报(自然科学版)》-2019-05-30（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            冗余度的数据存储结构,在少数节点被攻击的情况下,系统仍然能够保持稳定的运行。一般来说,区块链的基本结构如图1所示,包括:<SPAN 
+            class=red_font>区块体中记录的一段时间内所有节点的全部信息</SPAN>(包括交易信息、状态信息和代码等),这些信息经过哈希运算,以Merkle 
+            tree的形式保存在区块链中,方便快速归纳和校<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>5 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;79&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">其伪链长度超过主链长度，而这在现实世界中基本上是不可能的，因此可以说，区块链上的数据是不可篡改的。公开透明可溯源。区<SPAN 
+      class=red_font>块链是一个信息高度透明、开放的系统，全网广播的数据可以被任何人通过开放的途径查询和使用。基于统一的协议，节点之间的数据交换可以在安全、自由的去信任环境中实现，</SPAN>并且系统会永久存储通过验证的合法信息。基于链式存储结构，区块依次首尾相连，链上任何数据都可以通过此结构追本溯源，因此区块 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>浅析区块链技术的特征和应用前景&nbsp;&nbsp;&nbsp;&nbsp;秦素平;-《科技视界》-2019-10-15（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            立联络。中心化意味着对个体权利和选择机会进行了限制，而去中心化将给我们一个更自由，更透明，更公平的环境。2. 2自治性区<SPAN 
+            class=red_font>块链是一个信息高度透明、开放的系统，其高度公开的数据可以被任何人通过开放的途径查询或被用于研发其他项目。基于一个统一的、规范的协议，使得全部节点的数据交换能够在自由、安全的去信任环境中去实现，</SPAN>并且不受他人的干预影响。由于区块链系统中的数据具有相当高的稳定性和安全性，系统会永久添加和存储经过验证的信息，只有同时操<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>6 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;67&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">可以通过此结构追本溯源，因此区块链能够提供历史数据的溯源和定位功能。 
+      2.1.2 密码技术区块链数据层的安全性主要<SPAN 
+      class=red_font>依赖密码学相关技术，主要包括，哈希算法、数字签名、加密算法。哈希散列算法。使用哈希函数，输入一个任意长度的字符串，输出一个固定长度</SPAN>的哈希值。公式如下： 
+      (2.1) 输入的x取值范围是无限的，而输出的y是有限的。常见的hash算法有，MD5 [22 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            发展的态势。3区块链的关键技术3.1区块链中的密码学技术区块链的安全保障主要体现在其数据层和网络层，其中数据层的安全主要<SPAN 
+            class=red_font>依赖于密码学相关的安全技术，主要包括：哈希算法、加密算法、数字签名等。3.1.1哈希函数使用哈希函数，输入任意长度的消息，输出一个固定长度</SPAN>的字符串，其字符串就是哈希值。哈希函数能够很好地满足区块链数据不可篡改和可验证的安全需求。首先，哈希算法逆向困难，即根据<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>7 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;63&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">n 
+      resistance，很难找到两个不同的输入，使他们的输出的哈希值相同； b) 不可逆性，输入隐藏，hiding，<SPAN 
+      class=red_font>根据输出的哈希值，很难逆向计算出相应的输入值； c) 
+      输入敏感，即使输入值发生微小变化，计算输出的哈希值也完全不同；哈希</SPAN>函数被认为是puzzle 
+      friendly，对输入无记忆性，比特币挖矿就是通过改变输入值中的随机数，不断hash运算求得 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            长度的字符串，其字符串就是哈希值。哈希函数能够很好地满足区块链数据不可篡改和可验证的安全需求。首先，哈希算法逆向困难，即<SPAN 
+            class=red_font>根据一个哈希值，很难计算出相应的输入值；其次，哈希函数输入敏感，即使输入值发生微小变化，产生的哈希值也完全不同；最后，哈希</SPAN>算法具有强抗碰撞性，很难找到两个不同的输入，使得他们的哈希值相同。在比特币系统中，用户的比特币地址是利用哈希函数（例如，<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于混沌系统和DNA计算的图像加密研究&nbsp;&nbsp;&nbsp;&nbsp;喻文茜-《南昌大学硕士论文》-2019-05-25（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 殊的单向函数，当输入 值，可计算其 hash 
+            值h(x) ，但已知 hash 值h(x) ，则计算不出对应的 值。即使<SPAN 
+            class=red_font>输入值发生微小的变化，相应产生的哈希值也完全不同，</SPAN>这就是 hash 
+            函数的雪崩效应，正是因为这些特性，hash 函 x x第四章 基于 DNA 
+        连接的双向扩散图像加<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>8 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;100&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">这种方法要求接收方与发送方事先约定好，双方拿的是相同的钥匙，不能保证密钥拥有者的唯一性，而要每个需要进行数据传输的双方都<SPAN 
+      class=red_font>拥有相同的一组密钥会增加密钥数量，当用户量增大时就会产生密钥管理的负担。常见的对称加密算法有 DES 算法、RC5 
+      算法等。非对称加密算法的参与个体拥有两个密钥，公开的密钥叫公钥，非公开的密钥叫私钥，</SPAN>在数据传输过程中，接受者需要公开自己的公钥给发送者，发送者将要发送的数据使用接受者的公钥进行加密，然后将密文发送给接受者 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD class=n_bgd_biao_c>基于区块链的电子病历存证系统的设计与实现 - 
+            道客巴巴&nbsp;&nbsp;&nbsp;&nbsp;-《互联网文档资源（<A 
+            href="http://www.doc88.com/p-8542978912879.html" 
+            target=_blank>http://www.doc88.com/p-8542978912879.html</A>）》-（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            数据进行加密处理所使用的密钥。这种做法必须要求双方手中都持有同一把锁的钥匙，无法保证密钥拥有方唯一。数据的发送和接收方都<SPAN 
+            class=red_font>拥有密钥会增加密钥数量，当用户量增大时就会产生密钥管理的负担。常见的对称加密算法有 DES 算法、RC5 
+            算法。 非对称加密算法 [35] 
+            拥有两个密钥，公开的密钥叫公钥，非公开的密钥叫私钥。</SPAN>当需要发送数据给接收方时，接收方只需要出示自己的公钥，然后发送方将数据使用对方的公钥进行加密，接收方收到的加密数据是用自<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存证系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;田林-《山东师范大学博士论文》-2019-06-10（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            加密处理所使用的密钥。这种做法必须要求双方手中都持有同一把锁的钥匙，无法保证密钥拥有方唯一。数据的发送和接收方都<SPAN 
+            class=red_font>拥有密钥会增加密钥数量，当用户量增大时就会产生密钥管理的负担。常见的对称加密算法有 DES 算法、RC5 
+            算法。 非对称加密算法[35]拥有两个密钥，公开的密钥叫公钥，非公开的密钥叫私钥。 
+            </SPAN>当需要发送数据给接收方时，接收方只需要出示自己的公钥，然后发送方将数据使用对方的公钥进行加密，接收方收到的加密数据是<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>9 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;40&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">S 算法、RC5 
+      算法等。非对称加密算法的参与个体拥有两个密钥，公开的密钥叫公钥，非公开的密钥叫私钥，在数据传输过程中，<SPAN 
+      class=red_font>接受者需要公开自己的公钥给发送者，发送者将要发送的数据使用接受者的公钥进行加密，</SPAN>然后将密文发送给接受者，接受者收到密文后，使用自己的密钥解密，读取数据。整个过程中，一旦数据使用公钥加密后，只有对应接受 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD class=n_bgd_biao_c>基于区块链的电子病历存证系统的设计与实现 - 
+            道客巴巴&nbsp;&nbsp;&nbsp;&nbsp;-《互联网文档资源（<A 
+            href="http://www.doc88.com/p-8542978912879.html" 
+            target=_blank>http://www.doc88.com/p-8542978912879.html</A>）》-（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. RC5 算法。 非对称加密算法 [35] 
+            拥有两个密钥，公开的密钥叫公钥，非公开的密钥叫私钥。当需要发送数据给接收方时，<SPAN 
+            class=red_font>接收方只需要出示自己的公钥，然后发送方将数据使用对方的公钥进行加密，</SPAN>接收方收到的加密数据是用自己的公钥进行加密的，只需要使用自己持有的私钥对数据解密。使用非对称加密传输数据的过程中，一旦数<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存证系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;田林-《山东师范大学博士论文》-2019-06-10（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 算法。 
+            非对称加密算法[35]拥有两个密钥，公开的密钥叫公钥，非公开的密钥叫私钥。当需要发送数据给接收方时，<SPAN 
+            class=red_font>接收方只需要出示自己的公钥，然后发送方将数据使用对方的公钥进行加密，</SPAN>接收方收到的加密数据是用自己的公钥进行加密的，只需要使用自己持有的私钥对数据解密。使用非对称加密传输数据的过程中，一<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>10 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;52&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">到密文后，使用自己的密钥解密，读取数据。整个过程中，一旦数据使用公钥加密后，只有对应接受者的密钥才能对数据进行解密操作，<SPAN 
+      class=red_font>这样极大程度上保证了数据和持有密钥的安全性。常用的非对称加密算法包括 RSA和 
+      ECC（椭圆曲线加密算法</SPAN>）[24]等。对称加密与非对称加密数据传输过程对比如图2.3 图2.3 对称加密与非对称加密流程 2.1.3 
+      共识机 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD class=n_bgd_biao_c>基于区块链的电子病历存证系统的设计与实现 - 
+            道客巴巴&nbsp;&nbsp;&nbsp;&nbsp;-《互联网文档资源（<A 
+            href="http://www.doc88.com/p-8542978912879.html" 
+            target=_blank>http://www.doc88.com/p-8542978912879.html</A>）》-（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            钥对数据解密。使用非对称加密传输数据的过程中，一旦数据使用公钥生成密文，只有对应的私钥拥有者才有可能对数据进行解密操作，<SPAN 
+            class=red_font>这样就极大程度上保证了数据和持有密钥的安全性。常用的非对称加密算法包括 RSA 和 
+            ECC（椭圆曲线加密算法）等 </SPAN>[36] 。ECC 加密算法提供的密钥比 RSA更短，具有安全性更高、处理速度更快的特点 
+            [37] 。对称加密和非对称加<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存证系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;田林-《山东师范大学博士论文》-2019-06-10（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            解密。使用非对称加密传输数据的过程中，一旦数据使用公钥生成密文，只有对应的私钥拥有者才有可能对数据进行解密操作，<SPAN 
+            class=red_font>这样就极大程度上保证了数据和持有密钥的安全性。常用的非对称加密算法包括 RSA 和 
+            ECC（椭圆曲线加密算法</SPAN>）等[36]。ECC 加密算法提供的密钥比 RSA 
+            更短，具有安全性更高、处理速度更快的特点[37]。对称加密和非对称<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>11 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;48&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">据传输过程对比如图2.3 图2.3 对称加密与非对称加密流程 
+      2.1.3 共识机制共识机制是区块链技术的关键，是<SPAN 
+      class=red_font>规范区块链中节点行为的规则，节点通过共识机制建立互联网上的信任，确保对区块数据的有效性达成一致，</SPAN>全网都支持的信任机制让区块链去中心化成为可能。区块链的世界里，每隔一段时间，就要有矿工将网络中产生的交易数据打包成区 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. ，其中，目标值（target 
+            value）越小则寻找该随机数的难度越大。共识机制是区块链在不可信任环境中运行的基石，它是<SPAN 
+            class=red_font>规范区块链中节点行为的规则。共识机制是确保分布式节点对区块数据的有效性达成一致。</SPAN>当网络中有新的交易产生时，节点会广播这些新的交易信息，节点接收后经检验将数据打包成一个区块，经由既定的共区块号n-1Bl<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>12 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;51&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">账。每当要产生一个区块时，全体矿工要根据共识算法选出记账节点，获得记账权的矿工在本地交易池中选择验证通过的合法交易打包成<SPAN 
+      class=red_font>区块，将新区块向全网广播，随后，所有节点或代表节点对收到的区块信息进行验证，经过大多数节点认证通过后，</SPAN>记账节点将其添加到最长合法链后面。区块上链流程如图2.4 
+      图2.4 共识过程区块链网络层的安全主要有共识机制来保证 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            图2所示，首先进行选主，即从全体矿工节点中通过既定的共识算法选出记账节点；然后造块，记账节点将交易数据打包成块，生成新的<SPAN 
+            class=red_font>区块并全网广播；随后，所有节点或代表节点将收到的新区块进行验证；最后，获得大多数节点认证</SPAN>的区块将被添加到主链上。1997年，密码学家尼克·萨博（Nick 
+            Szabo）首次提出了智能合约[3]的概念。智能合约是<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>13 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;33&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">里介绍一种工作量证明机制（Proof of 
+      Work，POW）。 POW共识算法。目前区块链社区中两大比较成功的项目，<SPAN 
+      class=red_font>比特币和以太坊现阶段均采用POW共识机制来保证分布式节点的一致性。</SPAN>矿工通过计算哈希难题来争夺记账权，解题过程就是不断在计算哈希函数，将区块头部和随机值nonce作为输入，通过不断改变输入 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            功。只有最长的链才能被加入主链。由于每个节点均有成功解题的概率，所以节点的区块上链情况通常与节点拥有资源的多少密切相关。<SPAN 
+            class=red_font>比特币系统采用了PoW共识算法来保证分布式节点的一致性。</SPAN>当受到恶意节点攻击而产生分叉链时，由于节点信任最长链，只要全网算力的50%以上由诚实节点控制，那么诚实链将增长最快并超过<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>14 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;44&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">POW这种比拼算力的方式造成了很多算力资源的浪费，但也因此维护了区块链生态圈的和平稳定运转。 
+      2.1.4 智能合约 <SPAN class=red_font>1997年，密码学家尼克·萨博（Nick 
+      Szabo）首次提出了智能合约的概念[25]，</SPAN>Szabo希望消除中间人，只要满足某些条件，合同就会自动生效。区块链技术的出现，推动了智能合约的发展。无需第三方，合约是 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            生成新的区块并全网广播；随后，所有节点或代表节点将收到的新区块进行验证；最后，获得大多数节点认证的区块将被添加到主链上。<SPAN 
+            class=red_font>1997年，密码学家尼克·萨博（Nick 
+            Szabo）首次提出了智能合约[3]的概念。</SPAN>智能合约是一种在无需第三方参与的情况下，以代码方式形成、验证或执行合约的计算机协议。智能合约就是用程序代码编写的合约，它<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>15 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;39&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">块中的计算机程序，采用确定性的算法和确定的数据来源，并且满足可终止性。当网络状态变化满足设置的初始条件时，“矿工”将自动<SPAN 
+      class=red_font>执行智能合约内容。以太坊中，智能合约被认为是可直接控制数字资产的程序[26]。</SPAN>Ethereum和Hyperledger 
+      Fabric是应用智能合约的两大代表性技术平台，表2.1 从执行环境和编程语言 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            在无需第三方参与的情况下，以代码方式形成、验证或执行合约的计算机协议。智能合约就是用程序代码编写的合约，它的条款由程序来<SPAN 
+            class=red_font>执行[4]。以太坊认为，智能合约就是基于区块链的、可直接控制数字资产的程序[5]。</SPAN>智能合约与区块链技术的融合增加了交易的灵活性，改变了传统交易系统的顺序执行模式，更适合实际复杂的交易应用场景。区块链技术<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>16 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;33&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">reum 虚拟机EVM 轻量级虚拟机，执行效率低，资源消耗小 
+      Solidity, Serpent, LLL <SPAN 
+      class=red_font>应用范围广，特别是数字货币的支付应用场景，图灵完备的编程语言，</SPAN>能实现复杂的逻辑功能 Fabric 
+      Docker容器执行效率高，资源消耗大 Go, Java 企业级应用场景，可用 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            thon,Go,JavaScript等C,C++,Rust,Go区别适合小额交易场景，实现快速转账。块的大小限制交易规模<SPAN 
+            class=red_font>应用范围广，侧重于数字货币的支付应用场景使用图灵完备的编程语言，</SPAN>增强合约逻辑功能、降低合约编写难度，但是可能有潜在的安全风险加强智能合约的安全性，添加防回滚规则注重商业的需求，适应于通<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>17 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;51&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">图灵完备的编程语言，能实现复杂的逻辑功能 Fabric 
+      Docker容器执行效率高，资源消耗大 Go, Java <SPAN class=red_font>企业级应用场景，可用作商业平台开发 
+      Docker部署执行环境，资源消耗大，合约性能有影响智能合约</SPAN>增强了区块链技术在实际业务场景中应用的灵活性。类似于传统合同，用代码实现法律条款，将人与人之间复杂的关系程序化，利用计算 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            合约逻辑功能、降低合约编写难度，但是可能有潜在的安全风险加强智能合约的安全性，添加防回滚规则注重商业的需求，适应于通用的<SPAN 
+            class=red_font>企业级应用开发使用Docker执行环境，资源消耗大，影响合约性能智能合约</SPAN>关联法律合约，具有法律效应为金融行业提供专门服务支持语言众多，开发门槛低。可通过增加交互服务层的API，实现智能合约功能<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>18 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;98&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">将人与人之间复杂的关系程序化，利用计算机程序建立威信和约束力。可以认为，代码即法律，一旦生效不可反悔。这就需要注意一点，<SPAN 
+      class=red_font>由于智能合约是自动执行的并且不许第三方干预，合约内容的合理设计运行是整个系统稳定运行的关键，如果合约代码里的逻辑存在问题将严重影响区块链的安全。因此，需要提前对待上链的智能合约进行慎重的检查。 
+      </SPAN>2.2 Hyperledger Fabric框架 2.2.1 项目概述 Hyperledger（超级账本）是 Lin 
+</DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链关键技术的研究进展&nbsp;&nbsp;&nbsp;&nbsp;李燕;马海英;王占君;-《计算机工程与应用》-2019-08-23 
+            1（是否引证：<SPAN class=n_text_yz><SPAN 
+            class=n_text_green_normal>是</SPAN></SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            QTUM量子链全面支持“面向移动端”策略，可以在智能手机和物联网设备上运行，从而扩大商业应用可能性。从安全测试方面来看，<SPAN 
+            class=red_font>由于智能合约是自动执行的并且没有第三方干预，整个智能合约的合理设计运行是整个系统合理运行的关键，智能合约的</SPAN>安全对于整个区块链系统而言是至关重要的，如果合约代码里的实现逻辑存在问题会严重影响区块链的安全。因此，需要提前对待上链的<BR>2. 
+            个智能合约的合理设计运行是整个系统合理运行的关键，智能合约的安全对于整个区块链系统而言是至关重要的，如果合约代码里的实现<SPAN 
+            class=red_font>逻辑存在问题会严重影响区块链的安全。因此，需要提前对待上链的智能合约进行慎重的检查。</SPAN>一种解决办法就是在实际设计过程中使用以太坊提供的智能模板和测试环境。为了提高智能合约安全性检查的效率，可以引入形式化方法<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>19 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;76&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">体功能架构如图2.5[29] 图2.5 Hyperledger 
+      Fabric 架构图包含三个主要部分：成员管理服务<SPAN class=red_font>（Membership 
+      Servers，MSP），区块链服务（Blockchain Severs），链码服务（Chaincode Servers）。 
+      </SPAN>相关概念介绍。成员管理服务提供商（Membership Service Provider，MSP）。负责提供成员的注 
+</DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术在专利申请与保护业务中的应用研究&nbsp;&nbsp;&nbsp;&nbsp;郭志强-《河南大学博士论文》-2019-06-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. .2 Hyperledger fabric 
+            架构 Hyperledger fabric 主要包括三大组件：成员管理服务<SPAN 
+            class=red_font>（Membership Service）、区块链服务（Blockchain 
+            Service）、链码服务（Chaincode Serv</SPAN>ice）[33]，架构如图 2-2 所示。 Services 
+            APIs，SDKS，CLI MEMBERSHIP B<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>20 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;47&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">通过校验后，区块被认为是合法的，写入账本，并改变Key-Value状态数据库。 
+      2.3 web技术框架 2.3.1 <SPAN class=red_font>SSM组合框架简单介绍。SSM框架，是Spring + Spring 
+      MVC + MyBa</SPAN>tis组合的缩写，是轻量级JavaEE开发框架，适用于搭建大型应用系统。 
+      Spring是一个轻量级的支持控制反转（IO </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>酒店预订系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;宋姝洁-《大学生论文联合比对库》-2019-04-26（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            真实的用户角色，以简化设置安全性。还强调了升级此类性能增强以及易于设置的持久运行时变量等其他引人注目的原因。 2.3 <SPAN 
+            class=red_font>SSM框架 SSM框架是Spring + Spring MVC 
+            +MyBa</SPAN>tis的技术框架，适用于搭建大型应用系统[4]。 
+            Spring框架是开源的、Java应用最广的框架。它的成功主要来自于<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>21 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;96&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">Entity）将业务实体和数据表关联起来，操作实体类就可以实现操作底层数据库表。 
+      2.3.2 前端技术框架 Vue.<SPAN class=red_font>js 是一个JavaScript 
+      MVVM（Model-View-ViewModel）库，是一套构建用户界面的渐进式框架。是以数据驱动和组件化的思想构架起来的，采用自底向上增量开发的设计。Vu</SPAN>e只关注视图层，为开发人员提供简洁、易用的API。很轻量很快，通过尽可能简单的 
+      API 实现响应的数据绑定和组合的视图组 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>大数据平台的监管系统的研究与实现&nbsp;&nbsp;&nbsp;&nbsp;常媛媛-《北京邮电大学硕士论文》-2018-03-12（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. j Data Bindings —..f.. 
+            y , ~^ 图5-15 Vue.js架构图 Vue<SPAN class=red_font>.js 是一个 JavaScript 
+            MVVM (Model/View/View Model)库，是一套 
+            构建用户界面的渐进式框架[43]。Vue.js的主要思想是数据驱动及组件化，采用 自底向上增量开发的设计。 
+            </SPAN>ViewModel是Vue.js的核心，是作用于某一个HTML上元素的实例，这个 
+            元素可以是HTML上的任意指定了<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>20180902530&nbsp;&nbsp;&nbsp;&nbsp;郭振林-《高职高专院校联合比对库》-2018-06-02（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            慢的被出局，以至于一个优秀的项目因为不能不能适应技术的发展而被淘汰。Vue.js技术的出现很好的解决了部分问题，Vue.<SPAN 
+            class=red_font>js 
+            是一个JavaScriptMVVM库，是一套构建用户界面的渐进式框架。</SPAN>它采用自底向上增量开发的设计，以数据驱动和组件化的思想构建[3]。Vue.js相比于Angular.js提供了更加简洁、<BR>2. 
+            及各种支持库甚至是第三方库结合使用时，Vue.js能够最大程度上甚至是完全意义上为复杂的的单页应用提供驱动。Vue.js<SPAN 
+            class=red_font>是以数据驱动和组件化的思想所构建的，采用的自底向上的增量式开发。Vue.</SPAN>js提供了更加简洁，更易于理解的API，便于开发人员快速理解与上手，可以尽快的投入到开发过程中去[6]。一、Vue.<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>1501177781_李光剑_基于VUE前端全栈平台的团购平台&nbsp;&nbsp;&nbsp;&nbsp;贾一帆-《高职高专院校联合比对库》-2019-05-02（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            予了这么高的评价的vue.js，也是开源世界华人的骄傲，因为它的作者是位中国人–尤雨溪（Evan You）。 vue.<SPAN 
+            class=red_font>js 
+            是一个JavaScriptMVVM库，是一套构建用户界面的渐进式框架。它是以数据驱动和组件化的思想构建的，采用自底向上增量开发的设计。</SPAN>相比于Angular.js，Vue.js提供了更加简洁、更易于理解的API，使得我们能够快速地上手并使用Vue.js。 
+            <BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>7204044_刘童_基于个性化学习资源的网络推学习平台的推荐与实现_(刘童V002)毕业论文初稿end&nbsp;&nbsp;&nbsp;&nbsp;刘童-《高职高专院校联合比对库》-2019-06-02（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            式数据库，包括Google在内的许多公司在其桌面软件中亦使用SQLite存储用户数据。 5.1.4 vue Vue.<SPAN 
+            class=red_font>js 
+            是一个JavaScriptMVVM库，是一套构建用户界面的渐进式框架。它是以数据驱动和组件化的思想构建的，采用自底向上增量开发的设计。</SPAN>相比于Angular.js，Vue.js提供了更加简洁、更易于理解的API，使得我们能够快速地上手并使用Vue.js；同<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于深度学习心电诊断系统的研究与实现&nbsp;&nbsp;&nbsp;&nbsp;胡文博-《北京邮电大学博士论文》-2019-06-05（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 图2-8 MWM模式 2.4. 2 Vue 
+            框架 Vue是一个JavaScriptMVVM库，是一套构建用户界面的<SPAN 
+            class=red_font>渐进式框架。它是以数据驱动和组件化的思想构建的，采用自底向上增量开发的设计。</SPAN>非侵入性的响应式系统是其最独特的特性之一，数据模型只是普通的JavaScript对象。当进行修改JavaScri<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>数据驱动的结直肠肿瘤预后系统研发&nbsp;&nbsp;&nbsp;&nbsp;高源-《浙江大学硕士论文》-2019-01-03（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            理。前端的框架选择Vue.js开发。Vue.js是一套构建用户界面的渐进式框架，可以通过尽可能简单的API实现响<SPAN 
+            class=red_font>应的数据绑定和组合的视图组件，形成一套自底向上增量开发的设计理</SPAN>念。支持通过修改数据的方式修改视图，极大减少了代码量，不仅利于维护，也使得交互复杂的情况下代码的逻辑十分清晰。数<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>22 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;60&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">和组件化的思想构架起来的，采用自底向上增量开发的设计。Vue只关注视图层，为开发人员提供简洁、易用的API。很轻量很快，<SPAN 
+      class=red_font>通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。 
+      Vue的核心：数据驱动，数据改变驱动了视图的自动更新，</SPAN>开发者将 DOM 
+      绑定至底层实例的数据，当数据变化时，会自动改变视图，不用通过手动改变DOM来改变视图；视图组件化，将网 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>172496_代威威_家庭理财收支系统&nbsp;&nbsp;&nbsp;&nbsp;张贵豪-《大学生论文联合比对库》-2019-05-27（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 为一个组件，网页由很多组件嵌套或拼接组成。 
+            Vue是一个JavaScripMVVM库，是一套构建用户界面的渐进式框架，<SPAN 
+            class=red_font>通过尽可能简单的API实现响应的数据绑定和组合的视图组件。数据的改变驱动了视图的自动更新，</SPAN>传统的做法你得手动改变DOM来改变视图，Vue.js只需要改变数据，就会自动改变视图。Vue把整个网页的拆分成一个个区块<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于威胁情报基础库的关联关系可视化&nbsp;&nbsp;&nbsp;&nbsp;蔡真真-《大学生论文联合比对库》-2017-05-26（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 3.1 Vue.js Vue.js 
+            是一个构建数据驱动的 web 界面的渐进式框架，采用自底向上增量开发的设计。目标是<SPAN 
+            class=red_font>通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。Vue.</SPAN>js 
+            并非全能的框架，它只聚焦于视图层，当与相关工具和支持库一起使用时，它能完美地驱基于威胁情报基础库的关联关系可视化 
+          <BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD class=n_bgd_biao_c>基于Spring 
+            Boot和Vue的火电SIS系统设计与实现&nbsp;&nbsp;&nbsp;&nbsp;朱锋;-《科技创新导报》-2019-09-11（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. L配置。1.2 
+            Vue框架简介Vue是一套构建用户界面的渐进式框架，只关注视图层,采用自底向上增量开发的设计，它的目标是<SPAN 
+            class=red_font>通过尽可能简单的API实现响应的数据绑定和组合的视图组件。Vu</SPAN>e框架采用MVVM模式，能够将数据的变化显示并反映出来，这种效果是建立在对数据的双向绑定上，最终将其变化映射到虚拟DOM<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>23 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;31&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">疗记录存储系统。借助区块链的去中心化、不可篡改、隐私安全等特性，保证患者在就诊过程中产生的医疗数据的存储安全性，解决传统<SPAN 
+      class=red_font>使用中心数据库存储电子医疗记录存在的信息孤岛问题，使得医疗数据</SPAN>可以安全方便的实现跨机构共享，为患者跨医院就诊和医生远程治疗提供了便利，医生可根据完整的医疗记录，对病人的病情做出精准的 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于病历文本语义分析的智能肝病辅助诊疗系统研究&nbsp;&nbsp;&nbsp;&nbsp;浦东旭-《浙江大学硕士论文》-2018-01-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 4.12数据库表部分结构图 68 
+            浙江大学硕士学位论文 第4章基于病历文本语义分析的智能肝病辅助诊疗系统的设计 <SPAN 
+            class=red_font>本系统采用Mysql数据库来存储用户信息和电子</SPAN>医疗数据，它是一个真正的 
+            多用户、多线程SQL数据库服务器，结构化的查询语言是目前最流行和最标准化 
+      的数据库语言<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>24 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;38&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">存储电子医疗记录存在的信息孤岛问题，使得医疗数据可以安全方便的实现跨机构共享，为患者跨医院就诊和医生远程治疗提供了便利，<SPAN 
+      class=red_font>医生可根据完整的医疗记录，对病人的病情做出精准的判断，提供更优质的医疗服务。</SPAN>此外，当出现医疗纠纷或保险理赔纠纷时，区块链中保存的历史诊疗记录对医院、保险公司、患者三方都是公平的，且具有公信力，能够 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的病历存储与共享系统设计与实现&nbsp;&nbsp;&nbsp;&nbsp;周金萍-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            者可以随时查询、追溯自己的病历记录。因为，病历记录被完整的保存了下来，个人可根据以往的病历记录制定更详细的健康规划。<SPAN 
+            class=red_font>医生可根据患者完整的病历记录，对病人的病情做出更精准的判断，为患者提供更优质的医疗服务。</SPAN>从而达到缓和如今紧张的医患关系的目的。区块链上存储的病历记录是经过医生和个人签名的病历记录，这为以后保险理赔带来<BR></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV id=Repeater1_ctl01_Standard_Content class=n_ymnr_bz>
+<DIV class=n_ymnr_top>指&nbsp;&nbsp;&nbsp;&nbsp;标 </DIV>
+<DIV class=n_ymnr_top_s>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=620>
+  <TBODY></TBODY></TABLE>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=620>
+  <TBODY>
+  <TR>
+    <TD class=n_table_bz_gdh colSpan=2>疑似剽窃文字表述 </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>1. </TD>
+    <TD 
+      class=n_table_bz_gd>块链是一个信息高度透明、开放的系统，全网广播的数据可以被任何人通过开放的途径查询和使用。基于统一的协议，节点之间的数据交换可以在安全、自由的去信任环境中实现， 
+    </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>2. </TD>
+    <TD class=n_table_bz_gd>拥有相同的一组密钥会增加密钥数量，当用户量增大时就会产生密钥管理的负担。常见的对称加密算法有 DES 
+      算法、RC5 算法等。非对称加密算法的参与个体拥有两个密钥，公开的密钥叫公钥，非公开的密钥叫私钥， </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>3. </TD>
+    <TD class=n_table_bz_gd>接受者需要公开自己的公钥给发送者，发送者将要发送的数据使用接受者的公钥进行加密， </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>4. </TD>
+    <TD class=n_table_bz_gd>SSM组合框架简单介绍。SSM框架，是Spring + Spring MVC + MyBa 
+  </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>5. </TD>
+    <TD class=n_table_bz_gd>通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。 
+      Vue的核心：数据驱动，数据改变驱动了视图的自动更新， </TD></TR></TBODY></TABLE></TABLE></DIV></DIV>
+<DIV class=n_bodymid_bf>
+<TABLE class=n_table_jiebf border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bf_bt height=30 width=25>3. </TD>
+    <TD class=n_text_block_bs width=499><A 
+      name=45248428_002></A>基于区块链的医疗记录存储系统研究与开发.doc_第3部分 </TD>
+    <TD class=n_table_jiebf_zzs width=116>总字数：<SPAN 
+      class=n_text_block_bs>9305</SPAN> </TD></TR>
+  <TR>
+    <TD colSpan=3>
+      <TABLE class=n_table_jiebfs border=0 cellSpacing=0 cellPadding=0 
+width=640>
+        <TBODY>
+        <TR>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid; TEXT-INDENT: 1em" 
+            width=90>相似文献列表 </TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid" class=n_table_jiebf_fzb 
+          width=80></TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid" width=80></TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: left" 
+          class=n_table_jiebf_fzb colSpan=2></TD></TR>
+        <TR>
+          <TD style="TEXT-INDENT: 1em; WIDTH: 170px" 
+            class=n_table_jiebf_fzb>去除本人已发表文献复制比： </TD>
+          <TD width=80>
+            <DIV>1.5%(143) </DIV></TD>
+          <TD class=n_table_jiebf_fzb width=80>文字复制比： </TD>
+          <TD width=80>
+            <DIV>1.5%(143) </DIV></TD>
+          <TD style="TEXT-ALIGN: left" class=n_table_jiebf_fzb>疑似剽窃观点（0） 
+        </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>1 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019864873.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MjE3MjRGN3UrR3RuTHJKRWJQSVFPQ1g5S3ZCUmw3MGtPUUF2cjNXQTJGckNVUjdxZll1Um1GeURuVXIvQVZGMjY=" 
+      target=_blank>基于区块链的电子病历存储系统的设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.1%（101） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>肖奇颖(导师：王洁) - 《大连理工大学硕士论文》- 2019-03-20 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>2 </TD>
+    <TD class=n_text_G2 width=500>基于J2EE的社区车位共享系统后台的设计与实现 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（31） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>董爱博 - 《大学生论文联合比对库》- 2016-05-25 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>3 </TD>
+    <TD class=n_text_G2 width=500>3541090OTO电商cs </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（31） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>无 - 《大学生论文联合比对库》- 2016-08-10 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>4 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019026124.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MTM5NjZxZll1Um1GeURuVXIvQVZGMjZGN082R05ET3E1RWJQSVFPQ1g5S3ZCUmw3MGtPUUF2cjNXQTJGckNVUjc=" 
+      target=_blank>云南网新闻文本访问量预测系统设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.3%（30） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>何谊(导师：刘惟一) - 《云南大学硕士论文》- 2018-09-01 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class=n_qwdz_ywnr>
+<TABLE style="BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" id=table_item_list 
+class=n_bgd_biao border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR id=Repeater1_ctl02_tr_item>
+    <TD class=n_bgd_biao_b width=330 colSpan=2>原文内容 </TD>
+    <TD class=n_bgd_biao_bs width=310>相似内容来源 </TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" id=table1 
+class=n_bgd_biao border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=n_table_xu_a>1 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;53&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">述病历所有者查看授权记录，取消不需要的授权输入患者ID 
+      输出取消授权结果 3.2 非功能需求要制定一个完备的<SPAN 
+      class=red_font>系统，在实现基本的功能需求前提下，还要考虑系统的非功能性需求，包括可用性需求、安全性需求、可扩展性需求等，</SPAN>这些都是必不可少的思考点。 
+      3.2.1 可用性需求实现基本功能的基础上，能够平稳的运行是系统的必要条件。前端U </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            新构建属性树，基于新的访问策略对电子病历重新加密。 大连理工大学专业学位硕士学位论文 - 23 - 3.3 系统非<SPAN 
+            class=red_font>功能需求系统非功能需求主要包括系统的安全性需求、易用性需求、健壮性需求和可扩展性需求。 
+            </SPAN>3.3.1 
+            安全性为了保证系统中用户的隐私安全性，本系统使用基于属性的加密技术（ABE）将加密的电子病历存储在<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>云南网新闻文本访问量预测系统设计与实现&nbsp;&nbsp;&nbsp;&nbsp;何谊-《云南大学硕士论文》-2018-09-01（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            性需求是一个软件产品中必须具有的，除了满足用户业务需求之外的需求[43]。对于系统开发人员来说，开发的产品不仅要考虑<SPAN 
+            class=red_font>系统的功能要求，还要考虑系统的非功能性要求，</SPAN>以保证系统开发的质量。系统产品的非功能性需求不仅决定了软件产品的质量，而且在很大程度上也会影响其功能要求。因此，需 
+            <BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>2 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;30&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">统正常继续运行。故障节点修复后或有新节点生成，可以自动同步所需数据方便加入系统运行。 
+      3.3 本章小结本章主要是对<SPAN 
+      class=red_font>系统进行需求分析，包括功能性需求和非功能性需求。首先给出系统</SPAN>整体架构图，将系统功能从用户角度划分为四个模块，分别是管理员模块，通用功能模块，医生模块和患者模块，然后对每个模块分别画 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            拔式，能够方便的删除或增加某个模块功能，修改某个模块功能时，对其它模块没有影响。 3.4 本章小结本章主要对<SPAN 
+            class=red_font>系统进行需求分析，分为功能需求和非功能需求。首先介绍了系统</SPAN>中用户的种类以及各类用户的基本功能，然后介绍了系统的功能需求，根据需求给出了系统功能图和系统整体用例图，并对各个<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>3 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;29&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">功能模块，医生模块和患者模块，然后对每个模块分别画出模块功能用例图，再对每个子模块的功能需求细致分析。功能分析之后，针对<SPAN 
+      class=red_font>系统的非功能性需求，从可用性需求、安全性需求与可扩展性需求</SPAN>三个方面进行了讨论。 4 
+      详细设计根据需求分析中的功能性需求，针对各个模块分别给出详细设计。系统以web客户端的形 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 子病历重新加密。 
+            大连理工大学专业学位硕士学位论文 - 23 - 3.3 系统非功能需求系统非功能需求主要包括<SPAN 
+            class=red_font>系统的安全性需求、易用性需求、健壮性需求和可扩展性需求。 </SPAN>3.3.1 
+            安全性为了保证系统中用户的隐私安全性，本系统使用基于属性的加密技术（ABE）将加密的电子病历存储在<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>4 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;31&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">表字段类型描述 user_id int 主键 
+      user_publickey varchar 公钥 4.2.1 <SPAN 
+      class=red_font>用户注册用户想要使用系统，首先需要注册为系统合法用户。注册</SPAN>功能是web端完成的功能，不涉及访问区块链。用户注册分为患者注册、医生注册以及医疗机构注册，患者和医生归为用户类注册，医 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于J2EE的社区车位共享系统后台的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;董爱博-《大学生论文联合比对库》-2016-05-25（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. e(); } } } 4.4.4 
+            用户注册，登陆设计用户在使用此款App的时候，app会显示出欢迎界面，提示<SPAN 
+            class=red_font>用户使用前需要登陆，没注册的用户需先注册，</SPAN>只有注册后的用户才能够登陆进去，进而可以使用本系统提供的功能。摘要 
+            “基于J2EE的社区车位共享系统后台的设计与实现”<BR></DIV></TD></TR></TBODY></TABLE>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>3541090OTO电商cs&nbsp;&nbsp;&nbsp;&nbsp;无-《大学生论文联合比对库》-2016-08-10（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            。因此，在系统用户管理模块中需要完成如图3-7所示的应用功能。用户注册与登录功能：系统提供新用户添加的功能。当有新的<SPAN 
+            class=red_font>用户需要进入系统时，需要首先注册为系统的新用户，注册</SPAN>时需要提供用户身份的证明、用户种类、登录用户名、密码等信息；同时，用户进入系统后，都会提供修改个人信息、填写评论、发布消<BR></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV id=Repeater1_ctl02_Standard_Content class=n_ymnr_bz>
+<DIV class=n_ymnr_top>指&nbsp;&nbsp;&nbsp;&nbsp;标 </DIV>
+<DIV class=n_ymnr_top_s>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=620>
+  <TBODY></TBODY></TABLE>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=620>
+  <TBODY>
+  <TR>
+    <TD class=n_table_bz_gdh colSpan=2>疑似剽窃文字表述 </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>1. </TD>
+    <TD 
+      class=n_table_bz_gd>系统，在实现基本的功能需求前提下，还要考虑系统的非功能性需求，包括可用性需求、安全性需求、可扩展性需求等， 
+    </TD></TR></TBODY></TABLE></TABLE></DIV></DIV>
+<DIV class=n_bodymid_bf>
+<TABLE class=n_table_jiebf border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bf_bt height=30 width=25>4. </TD>
+    <TD class=n_text_block_bs width=499><A 
+      name=45248428_003></A>基于区块链的医疗记录存储系统研究与开发.doc_第4部分 </TD>
+    <TD class=n_table_jiebf_zzs width=116>总字数：<SPAN 
+      class=n_text_block_bs>9705</SPAN> </TD></TR>
+  <TR>
+    <TD colSpan=3>
+      <TABLE class=n_table_jiebfs border=0 cellSpacing=0 cellPadding=0 
+width=640>
+        <TBODY>
+        <TR>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid; TEXT-INDENT: 1em" 
+            width=90>相似文献列表 </TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid" class=n_table_jiebf_fzb 
+          width=80></TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid" width=80></TD>
+          <TD style="BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: left" 
+          class=n_table_jiebf_fzb colSpan=2></TD></TR>
+        <TR>
+          <TD style="TEXT-INDENT: 1em; WIDTH: 170px" 
+            class=n_table_jiebf_fzb>去除本人已发表文献复制比： </TD>
+          <TD width=80>
+            <DIV>4.6%(443) </DIV></TD>
+          <TD class=n_table_jiebf_fzb width=80>文字复制比： </TD>
+          <TD width=80>
+            <DIV>4.6%(443) </DIV></TD>
+          <TD style="TEXT-ALIGN: left" class=n_table_jiebf_fzb>疑似剽窃观点（0） 
+        </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>1 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=ZGXN201905025&amp;dbname=cjfdtotal&amp;dbcode=cjfd&amp;v=MDM0MzBqTXFvOUhZWVFPQ1g5S3ZCUmw3MGtPUUF2cjNXQTJGckNVUjdxZll1Um1GeURuVXJ6SlB5clRZTEc0SDk=" 
+      target=_blank>区块链技术在智慧养老领域的应用</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>2.1%（202） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>包凡仁;陈思;何振宇;朱庆华; - 《中国信息界》- 2019-10-25 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>2 </TD>
+    <TD class=n_text_G2 width=500><A 
+      href="https://kns.cnki.net/kcms/detail/detail.aspx?filename=1019864873.nh&amp;dbname=cdmdtotal&amp;dbcode=cdfd&amp;v=MzExMDdsNzBrT1FBdnIzV0EyRnJDVVI3cWZZdVJtRnlEblVyekpWRjI2Rjd1K0d0bkxySkViUElRT0NYOUt2QlI=" 
+      target=_blank>基于区块链的电子病历存储系统的设计与实现</A> </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>1.5%（146） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>肖奇颖(导师：王洁) - 《大连理工大学硕士论文》- 2019-03-20 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV>
+<DIV class=n_xu>
+<TABLE class=n_table_a border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class="n_xu_a n_text_back_a" width=20>3 </TD>
+    <TD class=n_text_G2 width=500>梁光楠_1120102027_车辆制造企业基础数据管理系统的设计与实现 </TD>
+    <TD class="n_xu_d n_text_red_d" width=100>0.9%（83） </TD></TR>
+  <TR>
+    <TD></TD>
+    <TD class=n_text_block_b>梁光楠 - 《大学生论文联合比对库》- 2014-06-05 </TD>
+    <TD class=n_xu_da width=100>是否引证：<SPAN class=n_text_yz>否</SPAN> 
+  </TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV class=n_qwdz_ywnr>
+<TABLE style="BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" id=table_item_list 
+class=n_bgd_biao border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR id=Repeater1_ctl03_tr_item>
+    <TD class=n_bgd_biao_b width=330 colSpan=2>原文内容 </TD>
+    <TD class=n_bgd_biao_bs width=310>相似内容来源 </TD></TR></TBODY></TABLE>
+<TABLE style="BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" id=table1 
+class=n_bgd_biao border=0 cellSpacing=0 cellPadding=0>
+  <TBODY>
+  <TR>
+    <TD class=n_table_xu_a>1 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;30&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">手机号，头像，医疗机构，实际应用中需要的更多信息处理流程与此类似，此处不做过多处理。医生选择个人中心选项卡，直接显示个人<SPAN 
+      class=red_font>信息，要修改时，直接在对应栏目输入最新的信息，点击提交按钮，</SPAN>更新个人信息。涉及到的后端主要功能函数：医生查询个人信息接口，如表4.16 
+      表4.16 查询个人信息请求u </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>梁光楠_1120102027_车辆制造企业基础数据管理系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;梁光楠-《大学生论文联合比对库》-2014-06-05（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            数据库，而不符合标准的则给出相应提示。添加材料信息活动图如图2-3所示。图2-3 添加材料信息活动图选择修改材料<SPAN 
+            class=red_font>信息功能，输入要修改的信息，点击保存进行提交，</SPAN>系统提示是否确认修改信息，选择确定则保存材料信息。提交时对所填写的材料信息进行检查，符合系统要求的会被存入数据库，而不符<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>2 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;32&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">网络交互，构成了一个简易的基于区块链的医疗记录的存储系统。 5 
+      测试维护系统测试是十分必要的，是对软件正式使用前的<SPAN 
+      class=red_font>进行的功能检查。模拟软件运行，模拟实际使用中可能出现的各种场景，</SPAN>包括正常请求响应，出现异常的处理等。测试过程要考虑全面，对照系统的功能需求和实际完成情况，设计详细的测试用例进行测试并分 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 据索引功能。 
+            基于区块链的电子病历存储系统的设计与实现 - 54 - 6 系统测试本章在系统运行环境下对系统<SPAN 
+            class=red_font>进行测试，在软件实际运行中，可能会出现各种</SPAN>或大或小的问题。本章的目的通过制定合理的测试方案，对电子病历共享系统进行测试，以保证系统在实际运行中的正确性，将<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>3 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;53&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">H5 java 1.8 spring 4.x mybatis 
+      mysql fabric go 5.<SPAN class=red_font>2 
+      系统功能测试系统功能测试面向系统实现的功能单元进行测试，从开发模块的角度，主要分为管理员功能测试，</SPAN>通用功能测试与用户功能测试。 
+      5.2.1 管理功能测试管理员功能测试用例如表5.2所示：表5.2 管理员功能测 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            结果不符合，则说明系统存在问题，需进一步进行“白盒测试”，检查内部程序错误排除故障，保证软件正常运行。 6.2 <SPAN 
+            class=red_font>功能测试功能测试以用户为单位，对系统各个模块功能进行测试，主要包括管理员功能测试、 
+            </SPAN>患者用户功能测试和医疗机构用户功能测试。（1） 管理员功能测试表 6.1 管理员功能测试 Tab. 
+          6.<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>4 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;36&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">!= X1 Y 5.2.3 
+      用户功能测试系统中设计的医生和患者的很多功能操作具有先后顺序性，所以这里将医生和患者的<SPAN 
+      class=red_font>功能放到一起进行测试。医生与患者相关功能测试用例如表5.4所示表5.</SPAN>4 
+      医生和患者功能测试用例测试用例编号测试功能测试描述预期结果是否通过 T-1 新建病历医生新建病历X1 患者审 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            注册证书、登陆系统、注销用户、数据加密、数据存储、数据索引、修改数据和解密文件。在进行患者功能测试前需保证管理员<SPAN 
+            class=red_font>功能测试的正确性。患者用户功能测试用例如表 6.2 所示表 </SPAN>6.2 患者用户功能测试 
+            Tab. 6.2 Patient user function test 
+    功能名<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>5 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;77&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">但使用区块链存储医疗数据这种模式不会一开始就得到社会的广泛支持，这是一个缓慢的积累过程。可以从以下三方面分析： 
+      a) <SPAN 
+      class=red_font>区块链技术本身。区块链技术在医疗领域的未来发展很大一部分取决于其自身的发展与成熟，若能够在基础技术上取得突破，相应的应用也能够得到推广。相较于区块链技术，</SPAN>电子医疗概念则更为成熟。在医疗服务领域中，可以将区块链视作为一种辅助手段，作为辅助手段的基础技术若不够完善，其对电子医疗 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术在智慧养老领域的应用&nbsp;&nbsp;&nbsp;&nbsp;包凡仁;陈思;何振宇;朱庆华;-《中国信息界》-2019-10-25（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            场景要紧密联系区块链的特性。区块链是一种分布式数据库，拥有去中心化、安全、不可篡改等特性，应用的场景一定是其特性的体现。<SPAN 
+            class=red_font>区块链技术在智慧养老领域的未来发展很大一部分取决于区块链自身的发展与成熟。若能够在区块链相关的技术上取得突破，相应的应用也能够取得相应的推广。在区块链</SPAN>尚未成熟时就与实体产业结合，或许是不错的探索与试错过程。但因为充满不确定性，投资与回报的关系不够明确。一些区块链与智慧养<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>6 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;98&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">决于其自身的发展与成熟，若能够在基础技术上取得突破，相应的应用也能够得到推广。相较于区块链技术，电子医疗概念则更为成熟。<SPAN 
+      class=red_font>在医疗服务领域中，可以将区块链视作为一种辅助手段，作为辅助手段的基础技术若不够完善，其对电子医疗的作用是不能保证的，这可能导致两者的互相试错和牵制。 
+      b) 
+      用户接受程度。区块链技术是全新的技术，</SPAN>很多人并不熟悉其技术原理甚至不了解其概念本质，由人性中普遍的不愿改变心理造成了天然的对新技术的自动屏蔽。特别是对区块链网 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术在智慧养老领域的应用&nbsp;&nbsp;&nbsp;&nbsp;包凡仁;陈思;何振宇;朱庆华;-《中国信息界》-2019-10-25（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            去中心化、不可篡改等特性是非常好的创新点，但是在将其应用到实践前还应该努力完善其基础技术。在智慧养老领域中，可以将区块链<SPAN 
+            class=red_font>视作为一种辅助手段，作为辅助手段的基础技术若不够完善，其对智慧养老的作用是不能保证的，这可能导致两者的互相试错与牵制。相较于区块链的</SPAN>相关概念与技术，智慧养老的相关概念及技术的发展更为成熟。区块链的存在更多的是因为其去中心化、安全、不可篡改等优势能够为智<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>7 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;31&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">留在理论分析上，真正落实到现实中的应用很少。这是因为缺少标准协议与相关法律文件的支持。需要建立一个开放的医疗系统标准，各<SPAN 
+      class=red_font>医疗机构遵循统一的多方协议，保证医疗记录在不同医疗机构间的数据</SPAN>兼容性和共享性。另外政府部门需要出台相关法律文件，将区块链应用涉及到的实际纠纷问题纳入法律范畴，提高公信力。对于一种 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>基于区块链的电子病历存储系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;肖奇颖-《大连理工大学硕士论文》-2019-03-20（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            ，缺乏法律条文，缺乏政府扶持，对电子病历安全的认可度不高等[4]。实际应用方面，北京已经开始在不同的医疗机构之间实现<SPAN 
+            class=red_font>医疗数据共享的平台，用户能够在网上查询不同医疗机构之间的数据记录。</SPAN>上海也建立了“医疗信息网”，能够动态采集市民的医疗信息并及时更新市民的电子病历信息状态，此系统现阶段已经存储了几<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>8 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;32&nbsp;字相似 </DIV>
+      <DIV class="n_bgd_biao_KUa n_red huanhang">是不方便的，下一代互联网是价值交换网络（internet of 
+      value）。区块链技术在信息与价值互联网中的存储和共享<SPAN 
+      class=red_font>应用领域的美好愿景是不可否认的，但在实现或者探索这个愿景的时候，</SPAN>需要不断的尝试，不断的尝试，才能对其有更好的把握。 
+      记录人（签字）：指导教师（签字）：致谢大学四年转眼 </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>区块链技术在智慧养老领域的应用&nbsp;&nbsp;&nbsp;&nbsp;包凡仁;陈思;何振宇;朱庆华;-《中国信息界》-2019-10-25（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            实际场景中是需要不断的实践和探索的。在智慧养老领域中纵然应用方向比较明晰，但也要经过实践的检验。区块链技术在智慧养老领域<SPAN 
+            class=red_font>应用的美好愿景是不可否认的，但在实现或者探索这个愿景的时候，</SPAN>需要对其有更好的把握。<BR></DIV></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD class=n_table_xu_a>9 </TD>
+    <TD style="WIDTH: 309px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <DIV class=n_text_red_ax>此处有&nbsp;54&nbsp;字相似 </DIV>
+      <DIV 
+      class="n_bgd_biao_KUa n_red huanhang">搞技术，在不断的项目实战中我的视野和技术深度、广度都得到了很大的扩展；感谢我的室友郈植皓、张腾在生活中的陪伴与支持。 
+      <SPAN 
+      class=red_font>感谢我的家人，感谢我的父母、亲戚对我求学生涯提供的支持和鼓励。再一次对所有帮助过我的人，表示衷心的感谢，</SPAN>谢谢你们。最后，感谢自己，感谢一直努力、从未放弃的自己。 
+      </DIV></TD>
+    <TD style="WIDTH: 310px; VERTICAL-ALIGN: top" class=n_bgd_biao_KU>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD 
+            class=n_bgd_biao_c>梁光楠_1120102027_车辆制造企业基础数据管理系统的设计与实现&nbsp;&nbsp;&nbsp;&nbsp;梁光楠-《大学生论文联合比对库》-2014-06-05（是否引证：<SPAN 
+            class=n_text_yz>否</SPAN>） </TD></TR>
+        <TR>
+          <TD>
+            <DIV class="n_bgd_biao_KUa huanhang n_red">1. 
+            大的指导。身边的同学也给了我很大的鼓励与支持，提出了很多有益的建议和意见。同时，感谢大学四年来传授我知识的老师们，也一并<SPAN 
+            class=red_font>感谢我的家人、朋友对我学业上的支持和鼓励，感谢所有关心、帮助过我的人。感谢</SPAN>北京理工大学，感谢软件学院。我不会忘记你们。最后，再一次对大学四年关心、帮助过我的各位老师、学长和同学们表示衷心地感<BR></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV>
+<DIV id=Repeater1_ctl03_Standard_Content class=n_ymnr_bz>
+<DIV class=n_ymnr_top>指&nbsp;&nbsp;&nbsp;&nbsp;标 </DIV>
+<DIV class=n_ymnr_top_s>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=620>
+  <TBODY></TBODY></TABLE>
+<TABLE class=n_table_bz border=0 cellSpacing=0 cellPadding=0 width=620>
+  <TBODY>
+  <TR>
+    <TD class=n_table_bz_gdh colSpan=2>疑似剽窃文字表述 </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>1. </TD>
+    <TD class=n_table_bz_gd>2 
+      系统功能测试系统功能测试面向系统实现的功能单元进行测试，从开发模块的角度，主要分为管理员功能测试， </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>2. </TD>
+    <TD 
+      class=n_table_bz_gd>区块链技术本身。区块链技术在医疗领域的未来发展很大一部分取决于其自身的发展与成熟，若能够在基础技术上取得突破，相应的应用也能够得到推广。相较于区块链技术， 
+    </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>3. </TD>
+    <TD 
+      class=n_table_bz_gd>在医疗服务领域中，可以将区块链视作为一种辅助手段，作为辅助手段的基础技术若不够完善，其对电子医疗的作用是不能保证的，这可能导致两者的互相试错和牵制。 
+      b) 用户接受程度。区块链技术是全新的技术， </TD></TR>
+  <TR>
+    <TD style="VERTICAL-ALIGN: top" class=n_table_bz_mark width=25>4. </TD>
+    <TD 
+      class=n_table_bz_gd>感谢我的家人，感谢我的父母、亲戚对我求学生涯提供的支持和鼓励。再一次对所有帮助过我的人，表示衷心的感谢， 
+    </TD></TR></TBODY></TABLE></TABLE></DIV></DIV></DIV><!-----------------------------------以上为第五部分------------------------------------------------>
+<DIV id=Panel1 class=n_qwdz_xxdz>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD width=10></TD>
+    <TD id=n_bgxxdz class=n_jcxxjg>表格检测详细结果 </TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bgxxjc width=10>&nbsp; </TD>
+    <TD class=n_bgxxjc><SPAN id=n_ywbg class=n_bz>原文表格1:</SPAN><SPAN>表4.12 
+      查询公钥</SPAN> </TD></TR>
+  <TR>
+    <TD width=10></TD>
+    <TD class="n_bgxxjcs table_check_rsR">
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD>请求url</TD>
+          <TD>/user/myPublicKey</TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求方式</SPAN></TD>
+          <TD><SPAN class=RedFont>Get</SPAN></TD></TR>
+        <TR>
+          <TD colSpan=2><SPAN class=RedFont>请求参数</SPAN></TD></TR>
+        <TR>
+          <TD>字段</TD>
+          <TD>描述</TD></TR>
+        <TR>
+          <TD>userID</TD>
+          <TD>int，用户id</TD></TR>
+        <TR>
+          <TD colSpan=2>返回参数</TD></TR>
+        <TR>
+          <TD>字段</TD>
+          <TD>描述</TD></TR>
+        <TR>
+          <TD>publicKey</TD>
+          <TD>用户公钥</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bgxxjcm width=10></TD>
+    <TD class=n_bgxxjcm>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD id=n_wxbg1-1 class="n_pic_dz n_bz" width=84>相似表格1： </TD>
+          <TD width=534>表5.15 会话持续时间设置接口 </TD></TR>
+        <TR>
+          <TD class=n_pic_dz width=84>相似度： </TD>
+          <TD>21.43% </TD></TR>
+        <TR>
+          <TD class=n_pic_dz width=84>来源： </TD>
+          <TD>S84466947__分布式架构下的微服务网关实现-《学术论文联合比对库》-2018-09-12 
+      </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD width=10></TD>
+    <TD class="n_bgxxjcs table_check_rsR">
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD>接口名称</TD>
+          <TD>会话信息获取接口</TD></TR>
+        <TR>
+          <TD>协议</TD>
+          <TD>http </TD></TR>
+        <TR>
+          <TD>返回格式</TD>
+          <TD>application/json</TD></TR>
+        <TR>
+          <TD>接口地址</TD>
+          <TD>/auth/session</TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求方式</SPAN></TD>
+          <TD><SPAN class=RedFont>get</SPAN></TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求参数</SPAN></TD>
+          <TD></TD></TR>
+        <TR>
+          <TD>返回值</TD>
+          <TD>List<SESSION> sessions</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bgxxjc width=10>&nbsp; </TD>
+    <TD class=n_bgxxjc><SPAN id=n_ywbg class=n_bz>原文表格2:</SPAN><SPAN>表4.13 
+      生成新密钥对</SPAN> </TD></TR>
+  <TR>
+    <TD width=10></TD>
+    <TD class="n_bgxxjcs table_check_rsR">
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD>请求url</TD>
+          <TD>/user/generateNewKey</TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求方式</SPAN></TD>
+          <TD><SPAN class=RedFont>Get</SPAN></TD></TR>
+        <TR>
+          <TD colSpan=2><SPAN class=RedFont>请求参数</SPAN></TD></TR>
+        <TR>
+          <TD>字段</TD>
+          <TD>描述</TD></TR>
+        <TR>
+          <TD>userID</TD>
+          <TD>int，用户id</TD></TR>
+        <TR>
+          <TD colSpan=2>返回参数</TD></TR>
+        <TR>
+          <TD>字段</TD>
+          <TD>描述</TD></TR>
+        <TR>
+          <TD>publicKey</TD>
+          <TD>新生成公钥</TD></TR>
+        <TR>
+          <TD>privateKey</TD>
+          <TD>新生成私钥</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bgxxjcm width=10></TD>
+    <TD class=n_bgxxjcm>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD id=n_wxbg1-1 class="n_pic_dz n_bz" width=84>相似表格1： </TD>
+          <TD width=534>表5.15 会话持续时间设置接口 </TD></TR>
+        <TR>
+          <TD class=n_pic_dz width=84>相似度： </TD>
+          <TD>18.75% </TD></TR>
+        <TR>
+          <TD class=n_pic_dz width=84>来源： </TD>
+          <TD>S84466947__分布式架构下的微服务网关实现-《学术论文联合比对库》-2018-09-12 
+      </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD width=10></TD>
+    <TD class="n_bgxxjcs table_check_rsR">
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD>接口名称</TD>
+          <TD>会话信息获取接口</TD></TR>
+        <TR>
+          <TD>协议</TD>
+          <TD>http </TD></TR>
+        <TR>
+          <TD>返回格式</TD>
+          <TD>application/json</TD></TR>
+        <TR>
+          <TD>接口地址</TD>
+          <TD>/auth/session</TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求方式</SPAN></TD>
+          <TD><SPAN class=RedFont>get</SPAN></TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求参数</SPAN></TD>
+          <TD></TD></TR>
+        <TR>
+          <TD>返回值</TD>
+          <TD>List<SESSION> sessions</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bgxxjc width=10>&nbsp; </TD>
+    <TD class=n_bgxxjc><SPAN id=n_ywbg class=n_bz>原文表格3:</SPAN><SPAN>表4.19 
+      申请授权</SPAN> </TD></TR>
+  <TR>
+    <TD width=10></TD>
+    <TD class="n_bgxxjcs table_check_rsR">
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD>请求url</TD>
+          <TD>/doctor/applyAuthorize</TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求方式</SPAN></TD>
+          <TD><SPAN class=RedFont>Get</SPAN></TD></TR>
+        <TR>
+          <TD colSpan=2><SPAN class=RedFont>请求参数</SPAN></TD></TR>
+        <TR>
+          <TD>字段</TD>
+          <TD>描述</TD></TR>
+        <TR>
+          <TD>doctorID</TD>
+          <TD>int，医生id</TD></TR>
+        <TR>
+          <TD>patientPhone</TD>
+          <TD>string，患者手机号</TD></TR>
+        <TR>
+          <TD colSpan=2>返回参数</TD></TR>
+        <TR>
+          <TD>字段</TD>
+          <TD>描述</TD></TR>
+        <TR>
+          <TD>result</TD>
+          <TD>提交申请结果 
+  0-成功，1-患者不存在，2-患者无病例信息，3-未知错误</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+<TABLE border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_bgxxjcm width=10></TD>
+    <TD class=n_bgxxjcm>
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD id=n_wxbg1-1 class="n_pic_dz n_bz" width=84>相似表格1： </TD>
+          <TD width=534>表5.15 会话持续时间设置接口 </TD></TR>
+        <TR>
+          <TD class=n_pic_dz width=84>相似度： </TD>
+          <TD>20.00% </TD></TR>
+        <TR>
+          <TD class=n_pic_dz width=84>来源： </TD>
+          <TD>S84466947__分布式架构下的微服务网关实现-《学术论文联合比对库》-2018-09-12 
+      </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD width=10></TD>
+    <TD class="n_bgxxjcs table_check_rsR">
+      <TABLE>
+        <TBODY>
+        <TR>
+          <TD>接口名称</TD>
+          <TD>会话信息获取接口</TD></TR>
+        <TR>
+          <TD>协议</TD>
+          <TD>http </TD></TR>
+        <TR>
+          <TD>返回格式</TD>
+          <TD>application/json</TD></TR>
+        <TR>
+          <TD>接口地址</TD>
+          <TD>/auth/session</TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求方式</SPAN></TD>
+          <TD><SPAN class=RedFont>get</SPAN></TD></TR>
+        <TR>
+          <TD><SPAN class=RedFont>请求参数</SPAN></TD>
+          <TD></TD></TR>
+        <TR>
+          <TD>返回值</TD>
+          <TD>List<SESSION> 
+sessions</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><!------------------------------------以下为说明部分----------------------------------------------->
+<DIV class=n_bodyfooter>
+<TABLE class=n_sm_table border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD class=n_sm width=43>说明： </TD>
+    <TD class=n_sms colSpan=5>1.指标是由系统根据《学术论文不端行为的界定标准》自动生成的 </TD></TR>
+  <DIV id=isjianjieY></DIV>
+  <TR>
+    <TD class=n_sm width=40></TD>
+    <TD class=n_sms colSpan=6>2.<SPAN 
+      style="COLOR: red">红色</SPAN>文字表示文字复制部分<SPAN id=huansequchu>;<SPAN 
+      style="COLOR: #009900">绿色</SPAN>文字表示引用部分;<SPAN 
+      style="COLOR: #7e6b5a">棕灰色</SPAN>文字表示作者本人已发表文献部分</SPAN> </TD></TR>
+  <TR>
+    <TD class=n_sm width=43></TD>
+    <TD class=n_sms colSpan=5>3.本报告单仅对您所选择比对资源范围内检测结果负责 </TD></TR>
+  <TR>
+    <TD class=n_sm width=43></TD>
+    <TD class=n_sms width=176>4.Email：<A href="mailto:amlc@cnki.net" 
+      target=_blank>amlc@cnki.net</A> </TD>
+    <TD class=n_sms width=25><IMG 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/sina.gif"> </TD>
+    <TD class=n_sms width=213><A href="http://e.weibo.com/u/3194559873" 
+      target=_blank>http://e.weibo.com/u/3194559873</A> </TD>
+    <TD class=n_sms width=25><IMG 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/tx.gif"> </TD>
+    <TD class=n_sms width=158><A href="http://t.qq.com/CNKI_kycx" 
+      target=_blank>http://t.qq.com/CNKI_kycx</A> </TD></TR>
+  <DIV></DIV></TBODY></TABLE>
+<TABLE class=n_sm_tables border=0 cellSpacing=0 cellPadding=0 width=640>
+  <TBODY>
+  <TR>
+    <TD width=40></TD>
+    <TD width=20><IMG class=n_print title=打印 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/n_btn_print.gif"> </TD>
+    <TD width=40><A class="n_table_prints n_print" 
+      href="javascript:print();">打印</A> </TD>
+    <TD id=save3 width=20><IMG style="CURSOR: pointer" class=n_print title=保存 
+      onclick=AddReportTesk() 
+      src="基于区块链的医疗记录存储系统研究与开发-文本复制检测报告单（全文对照）_files/n_btn_save.gif"> </TD>
+    <TD id=save4 width=40><A style="CURSOR: pointer" id=downReport1 
+      class="n_table_prints  n_print" onclick=AddReportTesk()>保存</A> </TD>
+    <TD width=340></TD>
+    <TD><A class=n_dz href="http://check.cnki.net/" 
+      target=_blank>http://check.cnki.net/</A> </TD></TR></TBODY></TABLE></DIV><!-- 报告单弹框==go --><!-- 报告单弹框==end --></DIV>
+<SCRIPT type=text/javascript>
+
+            function AddReportTesk() {
+
+                var pam = {
+                    methodKey: "add",
+                    fileID: $("#FileIDLbl").val(),
+                    reportType: $("#ReportTypeLbl").val(),
+                    reportName: $("#TitleLbl").val()
+                };
+
+                $.post(
+                    "Report.aspx",
+                    pam,
+                    function (data) {
+                        if (data.substring(0, 1) == "1") {
+                            //window.open("ReportDownload.aspx?fileID=" + $("#FileIDLbl").val() + "&reportType=" + $("#ReportTypeLbl").val());
+                            window.location.href = "ReportDownload.aspx?fileID=" + $("#FileIDLbl").val() + "&reportType=" + $("#ReportTypeLbl").val();
+                            //GetReportResult();
+                        }
+                        else {
+                            alert(data.substring(1));
+                        }
+                    },
+                    "text");
+            }
+            function GetReportResult() {
+
+                $.get("Report.aspx", {
+                    methodKey: "get",
+                    fileID: $("#FileIDLbl").val(),
+                    reportType: $("#ReportTypeLbl").val(),
+                    rn: Math.random()
+                },
+
+                    function (data) {
+
+                        var shanchu = "";
+                        var lianjie = "";
+
+                        if (data != "") {
+                            var list_c = data.split(",");
+                            $("#bpianming").empty().append(list_c[0]);
+                            $("#bgdtjshj").empty().append(list_c[1]);
+                            $("#bgdchuli").empty().append(list_c[2]);
+                            $("#bgdxizai").empty().append(list_c[3]);
+
+                            shanchu = list_c[4];
+                            lianjie = list_c[3];
+                        }
+
+                        if (shanchu != "1") {
+                            if (lianjie.length > 0) {
+                            }
+                            else {
+                                setTimeout(GetReportResult, 10000);
+                            }
+                        }
+                    },
+                    "text");
+            }
+
+        </SCRIPT>
+</FORM></BODY></HTML>
